@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="Wasteland">
+	<Package name="General">
+		<Key ID="STR_WL_Gen_TeamWEST">
+			<Original>BLUFOR</Original>
+		</Key>
+		<Key ID="STR_WL_Gen_TeamEAST">
+			<Original>OPFOR</Original>
+		</Key>
+		<Key ID="STR_WL_Gen_TeamGUER">
+			<Original>Independent</Original>
+		</Key>
+		<Key ID="STR_WL_Gen_TeamGUER_2">
+			<Original>Independent</Original>
+		</Key>
+	</Package>
+	<Package name="WelcomeMessage">
+		<Key ID="STR_WL_WelcomeToWasteland">
+			<Original>&lt;t color='#808080' size='2.5' &gt;A3Wasteland:&lt;/t&gt;&lt;t color='#B6A623' size='2.5' &gt; Stratis &lt;/t&gt;&lt;t color='#FF0000' size='2.5' &gt;v1.5.1&lt;/t&gt;</Original>
+		</Key>
+		<Key ID="STR_WL_YouAreInTeam">
+			<Original>&lt;t color='#FFFFFF' size='1.5' &gt;* You are in &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; team.&lt;br/&gt;* Attacking or stealing from other %4 players is &lt;t color="#FF1111"&gt;FORBIDDEN&lt;/t&gt;&lt;br/&gt;* &lt;t color="#FF1111"&gt;NO VOICE IN GLOBAL&lt;/t&gt;&lt;br/&gt;* You can find the Server Rules in the map menu.&lt;br/&gt;* Server restarts are done at the admin's discretion.&lt;br/&gt;* You will be locked to your team after 3 minutes.&lt;/t&gt;</Original>
+			<English>&lt;t color='#FFFFFF' size='1.5' &gt;* You are in &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; team.&lt;br/&gt;* Attacking or stealing from other %4 players is &lt;t color="#FF1111"&gt;FORBIDDEN&lt;/t&gt;&lt;br/&gt;* &lt;t color="#FF1111"&gt;NO VOICE IN GLOBAL&lt;/t&gt;&lt;br/&gt;* You can find the Server Rules in the map menu.&lt;br/&gt;* Server restarts are done at the admin's discretion.&lt;br/&gt;* You will be locked to your team after 3 minutes.&lt;/t&gt;</English>
+			<German>&lt;t color='#FFFFFF' size='1.5' &gt;* Du bist in &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; team.&lt;br/&gt;* Das töten von %4 Spielern ist untersagt! &lt;t color="#FF1111"&gt;Verboten&lt;/t&gt;&lt;br/&gt;* &lt;t color="#FF1111"&gt;Nicht in Global sprechen!&lt;/t&gt;&lt;br/&gt;* Du kannst die Serverregeln auf der Map finden!&lt;br/&gt;* Serverrestarts sind nach dem Ermessen des Admins!&lt;br/&gt;* Du wirst in dein Team gelockt nach 3 Minuten!&lt;/t&gt;</German>
+			<French>&lt;t color='#FFFFFF' size='1.5' &gt;* Vous êtes dans &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; equipe.&lt;br/&gt;* Attaquer ou voler les autres %4 joueurs est &lt;t color="#FF1111"&gt;INTERDIT&lt;/t&gt;&lt;br/&gt;* &lt;t color="#FF1111">PAS DE VOIX DANS LE CHAT GLOBAL&lt;/t&gt;&lt;br/&gt;* Vous pouvez trouver les règles du serveur dans le menu de la carte.&lt;br/&gt;* Les redémarrages du serveur sont effectués à la discrétion de l'administrateur.&lt;br/&gt;* A la suite d'une mort, si votre equipe se trouve toujours dans une zone bleu, vous pourrez respawner dessus aprés 6 minutes.&lt;/t&gt;</French>
+			<Turkish>&lt;t color='#FFFFFF' size='1.5' &gt;* Bu takımdasınız &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; takım.&lt;br/&gt;* Diğer %4 takım oyuncularına yönelik saldırmak veya çalmak &lt;t color="#FF1111"&gt;YASAKTIR&lt;/t&gt;&lt;br/&gt;* &lt;t color="#FF1111"&gt;GLOBAL KONUŞMA YOKTUR&lt;/t&gt;&lt;br/&gt;* Sunucu kurallarını harita menüsünden bulabilirsiniz.&lt;br/&gt;* Sunucu restartları adminin yönlendirmesi doğrultusunda yapılır.&lt;br/&gt;* 3 Dakika sonra bulunduğun takıma kilitleneceksin.&lt;/t&gt;</Turkish>
+			<Dutch>&lt;t color='#FFFFFF' size='1.5' &gt;* je bent in &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; groep.&lt;br/&gt;* aanvallen of stelen van andere %4 spelers is &lt;t color="#FF1111"&gt;Verboden&lt;/t&gt;&lt;br/&gt;* &lt;t color="#FF1111"&gt;Niet praten IN GLOBAL&lt;/t&gt;&lt;br/&gt;* server regels kan je vinden in het menu op de kaart.&lt;br/&gt;* server herstarten word gedaan op oordeel van de admin.&lt;br/&gt;* wisselen van groep kan niet meer na 3 minuten.&lt;/t&gt;</Dutch>
+			<Russian>&lt;t color='#FFFFFF' size='1.5' &gt;* Ваша команда &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; team.&lt;br/&gt;* Кража у других игроков %4 &lt;t color="#FF1111"&gt;ЗАПРЕЩЕНО&lt;/t&gt;&lt;br/&gt;* &lt;t color="#FF1111"&gt;НЕ ГОВОРИТЕ В ГЛОБАЛЬНЫЙ ЧАТ&lt;/t&gt;&lt;br/&gt;* Вы можете прочесть правила сервера в меню карты.&lt;br/&gt;* Перезапуски сервера выполняются по усмотрению администратора.&lt;br/&gt;* Вы не сможете сменить команду через 3 минуты.&lt;/t&gt;</Russian>
+			<Czech>&lt;t color='#FFFFFF' size='1.5' &gt;* Tvůj tým &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; team.&lt;br/&gt;* Zabíjení a okrádání %4 hráčů je zakázáno &lt;t color="#FF1111"&gt;ZAKÁZÁNO&lt;/t&gt;&lt;br/&gt;* &lt;t color="#FF1111"&gt;NEMLUVTE DO GLOBALNÍHO CHATU&lt;/t&gt;&lt;br/&gt;* Pravidla serveru si můžete přečíst v nabídce mapy.&lt;br/&gt;* Restartování serveru je na uvážení správce.&lt;br/&gt;* Po 3 minutách nebudete moci tým změnit.&lt;/t&gt;</Czech>
+			<Portuguese>&lt;t color='#FFFFFF' size='1.5' &gt;* Você está no &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; Time.&lt;br/&gt;* Atacar ou roubar de outros jogadores não é permitido &lt;t color="#FF1111"&gt;FORBIDDEN&lt;/t&gt;&lt;br/&gt;* &lt;t color="#FF1111"&gt;proibido usar voip no chat global&lt;/t&gt;&lt;br/&gt;* Você pode encontrar as regras no menu do mapa.&lt;br/&gt;* As reinicializações do servidor são feitas a critério do administrador.&lt;br/&gt;*você é bloqueado nesta equipe depois de 3 minutos.&lt;/t&gt;</Portuguese>
+		</Key>
+		<Key ID="STR_WL_YouAreInFFA">
+			<Original>&lt;t color='#FFFFFF' size='1.5' &gt;* You are in &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; team.&lt;br/&gt;* You are &lt;t color="#00aa00"&gt;FREE TO ATTACK ANYONE&lt;/t&gt;&lt;br/&gt;* You can find the Server Rules in the map menu.&lt;br/&gt;* Server restarts are done at the admin's discretion.&lt;/t&gt;</Original>
+			<English>&lt;t color='#FFFFFF' size='1.5' &gt;* You are in &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; team.&lt;br/&gt;* You are &lt;t color="#00aa00"&gt;FREE TO ATTACK ANYONE&lt;/t&gt;&lt;br/&gt;* You can find the Server Rules in the map menu.&lt;br/&gt;* Server restarts are done at the admin's discretion.&lt;/t&gt;</English>
+			<German>&lt;t color='#FFFFFF' size='1.5' &gt;* Du bist in &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; Team.&lt;br/&gt;* Du kannst &lt;t color="#00aa00"&gt;ALLE ANGREIFEN!&lt;/t&gt;&lt;br/&gt;* Du kannst die Servereregeln auf der Map finden!&lt;br/&gt;* Serverrestarts sind nach dem Ermessen des Admins!&lt;/t&gt;</German>
+			<French>&lt;t color='#FFFFFF' size='1.5' &gt;* Vous êtes dans &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; equipe.&lt;br/&gt;* Vous êtes &lt;t color="#00aa00"&gt;LIBRE D'ATTAQUER N'IMPORTE QUI&lt;/t&gt;&lt;br/&gt;* Vous pouvez trouver les règles du serveur dans le menu de la carte.&lt;br/&gt;* Les redémarrages du serveur sont effectués à la discrétion de l'administrateur.&lt;/t&gt;</French>
+			<Turkish>&lt;t color='#FFFFFF' size='1.5' &gt;* Bu takımdasınız &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; team.&lt;br/&gt;* Siz &lt;t color="#00aa00"&gt;HERKESE SALDIRABİLİRSİNİZ.&lt;/t&gt;&lt;br/&gt;* Sunucu kurallarını harita menüsünden bulabilirsiniz.&lt;br/&gt;* Sunucu restartları adminin yönlendirmesi doğrultusunda yapılır.&lt;/t&gt; </Turkish>
+			<Dutch>&lt;t color='#FFFFFF' size='1.5' &gt;* je bent in &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; groep.&lt;br/&gt;* jij bent &lt;t color="#00aa00"&gt;vrij om iedereen aan te vallen&lt;/t&gt;&lt;br/&gt;* server regels kan je vinden in het menu op de kaart.&lt;br/&gt;* server herstarten word gedaan op oordeel van de admin.&lt;/t&gt;</Dutch>
+			<Russian>&lt;t color='#FFFFFF' size='1.5' &gt;* Вы находитесь в &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; team.&lt;br/&gt;* Ваше положение &lt;t color="#00aa00"&gt;Независимые&lt;/t&gt;&lt;br/&gt;* Вы можете прочесть правила сервера в меню карты.&lt;br/&gt;* Перезапуски сервера выполняются по усмотрению администратора.&lt;/t&gt;</Russian>
+			<Czech>&lt;t color='#FFFFFF' size='1.5' &gt;* Jsi v &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; team.&lt;br/&gt;* Vaše pozice &lt;t color="#00aa00"&gt;Nezávislý&lt;/t&gt;&lt;br/&gt;* Pravidla serveru si můžete přečíst v nabídce mapy.&lt;br/&gt;* Restartování serveru je na uvážení správce.&lt;/t&gt;</Czech>
+			<Portuguese>&lt;t color='#FFFFFF' size='1.5'&gt;* Você está no   &lt;img size="1.5" image="%1"/&gt; &lt;t color="%2"&gt;%3&lt;/t&gt; Time.&lt;br/&gt;* Você é &lt;t color="#00aa00"&gt;LIVRE PARA ATACAR QUALQUER UM&lt;/t&gt;&lt;br/&gt;* você pode encontrar as regras no menu do mapa.&lt;br/&gt;* As reinicializações do servidor são feitas a critério do administrador.&lt;/t&gt;</Portuguese>
+		</Key>
+		<Key ID="STR_WL_MapMoreInfo">
+			<Original>&lt;t color='#FFFFFF' size='1.5' &gt;Report bugs and suggestions on Discord: http://www.noaim.me &lt;br/&gt;Press the Windows or Home key to toggle player names&lt;br/&gt;Press the End key to toggle earplugs&lt;br/&gt;For more info please see the map&lt;br/&gt;</Original>
+			<English>&lt;t color='#FFFFFF' size='1.5' &gt;Report bugs and suggestions on Discord: http://www.noaim.me &lt;br/&gt;Press the Windows or Home key to toggle player names&lt;br/&gt;Press the End key to toggle earplugs&lt;br/&gt;For more info please see the map&lt;br/&gt;</English>
+			<German>&lt;t color='#FFFFFF' size='1.5' &gt;Melde Bugs und Ideen auf Discord: http://www.noaim.me &lt;br/&gt;Drücke die Windowstaste für die übersicht der Spielernamen!&lt;br/&gt;Drücke die Ende Taste um Ohrstöpsel einzusetzten!&lt;br/&gt;Für mehr Informationen schau auf die Map!&lt;br/&gt;</German>
+			<French>&lt;t color='#FFFFFF' size='1.5' &gt;Signaler des bugs et des suggestions sur Discord: http://www.noaim.me &lt;br/&gt;Appuyez sur la touche Windows ou Accueil pour voir les noms des joueurs&lt;br/&gt;Appuyez sur la touche Fin pour basculer les bouchons d'oreille&lt;br/&gt;Pour plus d'informations, veuillez consulter la carte&lt;br/&gt;</French>
+			<Turkish>&lt;t color='#FFFFFF' size='1.5' &gt;Raporlarınızı,bugları ve isteklerinizi Discord ile belirtebilirsiniz. Discord: http://www.noaim.me &lt;br/&gt;Windows tuşu veya Home tuşuna basarak oyuncuların isimlerini görebilirsiniz.&lt;br/&gt;END tuşuna basarak kulak tıkaçlarını takabilirsiniz.&lt;br/&gt;Daha fazla bilgi için haritaya bakınız.&lt;br/&gt; </Turkish>
+			<Dutch>&lt;t color='#FFFFFF' size='1.5' &gt;meld bugs en suggesties op Discord: http://www.noaim.me &lt;br/&gt;Druk op de windows knop of je home knop om namen van spelers aan of uit te zetten&lt;br/&gt;Druk op de END knop om oordoppen in te doen&lt;br/&gt;kijk op de kaart voor meer informatie&lt;br/&gt;</Dutch>
+			<Russian>&lt;t color='#FFFFFF' size='1.5' &gt;Пишите о багах и предложениях в Discord: http://www.noaim.me &lt;br/&gt;Нажмите клавишу Windows или Home, чтобы видеть имена игроков&lt;br/&gt;Нажмите клавишу End, чтобы вставить беруши&lt;br/&gt;Для получения дополнительной информации, пожалуйста, изучите карту&lt;br/&gt;</Russian>
+			<Czech>&lt;t color='#FFFFFF' size='1.5' &gt;Zveřejňujte chyby a návrhy ve službě Discord: http://www.noaim.me &lt;br/&gt;Jména hráčů zobrazíte stisknutím klávesy Windows nebo Domů&lt;br/&gt;Stisknutím tlačítka END vložte špunty do uší&lt;br/&gt;Další informace naleznete na mapě&lt;br/&gt;</Czech>
+			<Portuguese>&lt;t color='#FFFFFF' size='1.5' &gt;relatar bugs e sugestões sobre discórd:http://www.noaim.me &lt;br/&gt;Aperte a tecla HOME para ver nomes dos players&lt;br/&gt;Aperte a tecla END para ativar earplugs&lt;br/&gt;Para mais info olhe o mapa&lt;br/&gt;</Portuguese>
+		</Key>
+	</Package>
+	<Package name="TeamLock">
+		<Key ID="STR_WL_Punish_Teamkiller">
+			<Original>You have been punished for teamkilling twice during this server session. Your inventory has been wiped, and you are now locked to the Independent side.</Original>
+			<English>You have been punished for teamkilling twice during this server session. Your inventory has been wiped, and you are now locked to the Independent side.</English>
+			<German>Du wurdest gemeldet für das töten von Leuten aus deinem Team! Dein Inventar wurde geleert und du kannst vorab nur noch als Independent spielen!</German>
+			<French>Vous avez été sanctionnez pour avoir tuer un membre de votre equipe au cours de cette session de serveur. Votre inventaire a été effacé et vous êtes maintenant verrouillé du côté indépendant.</French>
+			<Turkish>Bu oturumda iki kez takım arkadaşınızı öldürdüğünüz için cezalandırıldınız.Envanteriniz temizlendi ve Bağımsız tarafa kilitlendiniz.</Turkish>
+			<Dutch>je bent gestraft voor het doden van je medespeler voor de tweede keer deze sesie. de spullen in je zakken zijn verwijderd, en je kan nu alleen spelen als Independent.</Dutch>
+			<Russian>Вы были наказаны за двойное убийство своих в этот сеанс сервера. Ваше снаряжение было уничтожено, и теперь вы можете играть только за Independent.</Russian>
+			<Czech>Během této relace serveru jste byli dvakrát potrestáni za zabíjení týmů. Váš inventář byl vymazán a nyní jste uzamčeni na straně Nezávislí.</Czech>
+			<Portuguese>Você foi punido por matar seu time duas vezes durante essa sessão e seu inventário foi apagado. e você agora wsta bloqueado como independente.</Portuguese>
+		</Key>
+		<Key ID="STR_WL_Loading_Teamkiller">
+			<Original>You are restricted to the Independent side, due to having done 2 or more teamkills during this server session.</Original>
+			<English>You are restricted to the Independent side, due to having done 2 or more teamkills during this server session.</English>
+			<German>Du bist jetzt nur noch Independent weil du 2 oder mehr Spieler aus deinem Team gekillt hast!</German>
+			<French>Vous ne pouvez accéder a cette faction, car vous avez tuer au moins deux membres de votre equipe lors de cette session</French>
+			<Turkish>Bu oturumda 2 kez veya daha fazla takım arkadaşı öldürürseniz bağımsız tarafa geçirilecek ve takımınız kilitlenecektir.</Turkish>
+			<Dutch>je bent bent beperkt tot het spelen met de indipendent groep, omdat je 2 of meerdere keren je groep genoten gedood hebt tijdens deze sessie.</Dutch>
+			<Russian>До конца сеанса сервера вы не можете сменить команду из-за того, что совершили 2 или более убийств игроков по команде.</Russian>
+			<Czech>Až do konce relace serveru nemůžete měnit týmy, protože jste v týmu spáchali 2 nebo více zabití hráčů.</Czech>
+			<Portuguese> Você está restrito ao lado independente, devido a ter matado duas vezes seu time durante esta sessão de servidor.</Portuguese> 
+		</Key>
+		<Key ID="STR_WL_Loading_Teamswitched">
+			<Original>You have played as %1 for too long and cannot switch to the other team. (ask an admin to unlock you)</Original>
+			<English>You have played as %1 for too long and cannot switch to the other team. (ask an admin to unlock you)</English>
+			<German>Du hast als %1 zu lange gespielt! Du kannst die Team vorab nicht mehr wechseln. (Frage einen Admin, dich zu entsperren)</German>
+		</Key>
+	</Package>
+	<Package name="TeamKillWarningMessage">
+		<Key ID="STR_TK_MESSAGE">
+			<Original>&lt;t size='2' color='#ff0000'&gt;Team killing is against the rules!&lt;/t&gt;&lt;br/&gt;If this was a mistake then you must explain yourself and say sorry, otherwise they will mark you as teamkiller and you will get kicked.</Original>
+			<English>&lt;t size='2' color='#ff0000'&gt;Team killing is against the rules!&lt;/t&gt;&lt;br/&gt;If this was a mistake then you must explain yourself and say sorry, otherwise they will mark you as teamkiller and you will get kicked.</English>
+			<German>&lt;t size='2' color='#ff0000'&gt;Töten von Teammitgliedern ist ein vertoß der Regeln!&lt;/t&gt;&lt;br/&gt;Wenn es ein Unfall war, entschuldige dich und erstatte das!</German>
+			<French>&lt;t size='2' color='#ff0000'&gt;Tuer des membres de son equipe est contraire au réglement&lt;/t&gt;&lt;br/&gt;Si c'était une erreur, vous devez vous expliquer et dire pardon, sinon ils vous marqueront comme un tueur d'équipier et vous serez expulsé.</French>
+			<Turkish>&lt;t size='2' color='#ff0000'&gt;Takım arkadaşı öldürmek kurallara karşıdır!&lt;/t&gt;&lt;br/&gt;Eğer bu bir hataysa kendinizi ifade edin ve özür dileyin, yoksa sizi takım arkadaşı katili olarak işaretleyecekler ve sunucudan atılacaksınız.</Turkish>
+			<Dutch>&lt;t size='2' color='#ff0000'&gt;het doden van je medespeler is tegen de regels!&lt;/t&gt;&lt;br/&gt;als het perongeluk ging moet je dit uitleggen en je verontschuldigen, anders word je gemarkeerd als medespeler moordenaar en word je van de server verwijderd.</Dutch>
+			<Russian>&lt;t size='2' color='#ff0000'&gt;Убийство своих противоречат правилам сервера! Если это было ошибкой, вы должны извиниться, иначе вас пометят вас как  убийцу своих, и вас выгонят.</Russian>
+			<Czech>&lt;t size='2' color='#ff0000'&gt;Týmové zabíjení je v rozporu s pravidly!&lt;/t&gt;&lt;br/&gt;Zabít vlastní je v rozporu s pravidly serveru! Pokud to byla chyba, musíte se omluvit, jinak budete označeni za vlastního vraha a budete vyhozeni.</Czech>
+			<Portuguese>&lt;t size='2' color='#ff0000'&gt;Matar equipe é contra as regras!&lt;/t&gt;&lt;br/&gt;Se isso for um erro você deve pedir desculpas, caso contrário, eles vão marcar você como assassino de equipe e você vai ser chutado.</Portuguese>
+		</Key>
+	</Package>
+	<Package name="Diary">
+		<Key ID="STR_WL_Diary_RulesContent">
+			<Original>&lt;br/&gt;    1. Keep bad language to a minimum. If you have a problem with another player, take it to direct.&lt;br/&gt;    2. NO VOIP IN GLOBAL. Use the channels or Teamspeak!.&lt;br/&gt;    3. Team killing when you are in BLUFOR or OPFOR is forbidden and punishable. Play as Independent if you want to be free for all.&lt;br/&gt;    4. Revealing information about your (ex)team to other teams is lame and not appreciated&lt;br/&gt;    5. Do not exploit R3F or any other add-ons or you will be banned.&lt;br/&gt;    6. Using or spamming with loud\long custom sound commands will cause punishment up to permanent ban</Original>
+			<English>&lt;br/&gt;    1. Keep bad language to a minimum. If you have a problem with another player, take it to direct.&lt;br/&gt;    2. NO VOIP IN GLOBAL. Use the channels or Teamspeak!.&lt;br/&gt;    3. Team killing when you are in BLUFOR or OPFOR is forbidden and punishable. Play as Independent if you want to be free for all.&lt;br/&gt;    4. Revealing information about your (ex)team to other teams is lame and not appreciated&lt;br/&gt;    5. Do not exploit R3F or any other add-ons or you will be banned.&lt;br/&gt;    6. Using or spamming with loud\long custom sound commands will cause punishment up to permanent ban</English>
+			<German>&lt;br/&gt;    1. Pass bitte auf was du schreibst!. Wenn du ein Problem mit einem Spieler hast, melde ihn beim Support!&lt;br/&gt;    2. Sprechen über Global ist verboten! Benutzt den Teamspeak oder direkten Channel!&lt;br/&gt;    3. Das töten von mitspielern in der gleichen Fraktion ist verboten und kann bestraft werden! Wenn du frei sein willst, spiel als Independent!&lt;br/&gt;    4. Das weitergeben von Informationen deines Teams an andere ist untersagt!&lt;br/&gt;    5. Hacken/Cheaten und Bugusing ist untersagt und wird sofort mit einem Ban bestraft!&lt;br/&gt;    6. Das spammen im Chat ist untersagt!</German>
+			<French>&lt;br/&gt;    1. Gardez un language correcte. Si vous avez un probléme avec un autre joueur, parlez en avec un membre de l'administration.&lt;br/&gt;     2. PAS DE VOIX DANS LE CHAT GLOBAL. Uiliser le chat ou Teamspeak!&lt;br/&gt;    3. Tuer des membres de son equipe lorsque vous êtes en BLUFOR ou OPFOR est interdit et punissable. Jouez en tant qu'indépendant si vous voulez être libre.&lt;br/&gt;     4. Révéler des informations sur votre (ex) équipe à d'autres équipes n'est pas poney et n'est pas apprécié&lt;br/&gt;    5. N'exploitez pas R3F ou tout autre module complémentaire ou vous serez banni.&lt;br/&gt;    6. L'utilisation ou le spam avec des commandes sonores personnalisées fortes et longues entraîneront une punition jusqu'à l'interdiction permanente!</French>
+			<Turkish>&lt;br/&gt;    1. Argoyu en aza düşürün. Başka bir oyuncuyla probleminiz varsa bize yönlendirin.&lt;br/&gt;    2. GENEL KANALDA KONUŞMAYIN. Kanalları veya Teamspeak'i kullanın!.&lt;br/&gt;    3. BLUFOR veya OPFOR iken takım arkadaşı öldürmek yasaktır ve cezalandırılır. Bağımsız takımında oynadığınızda her şey için özgürsünüz.&lt;br/&gt;    4. Eski arkadaşlarınızla ilgili bilgileri diğer takımlara söylemek uygun değildir ve hoş karşılanmaz&lt;br/&gt;    5. R3F veya farklı eklentileri kullanmayın aksi taktirde banlanırsınız.&lt;br/&gt;    6. Yüksek sesle konuşmak veya farklı ses komutlarını spamlamak sınırsız bana kadar uzanır</Turkish>
+			<Dutch>&lt;br/&gt;    1.hou het netjes tijdens het typen. waarneer je een probleem met een ander hebt ga dan naar direct.&lt;br/&gt;    2. spreken in global is verboden. gebruik de kanalen in teamspeak!.&lt;br/&gt;    3. het doden van medespelers in de zelfde groep is verboden en strafbaar!. speels als Independent als je ieder voor zich wilt.&lt;br/&gt;    4. het delen van informatie naar een andere groep word niet geapprecieerd&lt;br/&gt;    5. het gebruiken van hacks/cheats of andere programmas om voordeel te krijgen is verboden en word bestraft met een ban.&lt;br/&gt;    6. het velemalen afspelen van lange of luide geluiden zal bestraft kunnen worden met een permanente ban</Dutch>
+			<Russian>&lt;br/&gt;    1. Не сквернословить.  Если у вас есть проблема с другим игроком, напишите в личку.&lt;br/&gt;    2.  НЕ РУГАТЬСЯ В ГЛОБАЛЬНОМ ЧАТЕ. Используйте каналы или Teamspeak!.&lt;br/&gt;    3. Убийство своих, когда вы играете за BLUFOR или OPFOR, запрещены и наказуемы. Играйте за Independent, если вы хотите быть свободным.&lt;br/&gt;    4. Раскрытие информации о вашей (бывшей) команде другим командам отвратительно и не приветствуется.&lt;br/&gt;    5. Не используйте R3F или любые другие дополнения, иначе вас забанят.&lt;br/&gt;    6.  Спамить в чат громкими\длинными настраиваемыми звуковыми командами приведет к перманентному бану!</Russian>
+			<Czech>&lt;br/&gt;    1. Nepoužívejte sprosté výrazy. Pokud máte problém s jiným hráčem, napište osobní.&lt;br/&gt;    2. ŽÁDNÝ HLAS V GLOBÁLU. Použijte kanály nebo Teamspeak!.&lt;br/&gt;    3. Zabíjení vlastních lidí, když hrajete za BLUFOR nebo OPFOR, je zakázáno a trestáno. Hrajte jako Independent, pokud chcete být svobodní.&lt;br/&gt;    4. Sdělování informací o vašem (bývalém) týmu jiným týmům je nechutné a odrazující&lt;br/&gt;    5. Nevyužívejte R3F ani žádné jiné doplňky, jinak dostanete ban.&lt;br/&gt;    6. Použití nebo spamování pomocí hlasitých\dlouhých vlastních zvukových příkazů způsobí trest až k trvalému zákazu</Czech>
+			<Portuguese>&lt;br/&gt;  1. Mantenha a linguagem ruim ao mínimo. Se você tem um problema com outro jogador,leve isso para fora.&lt;br/&gt;   2. SEM VOIP NO GLOBAL. Use Discord ou TS !.&lt;br/&gt;   3. Matar equipe quando você está em BLUFOR ou OPFOR é proibido e punível.Jogue como independente se quiser matar todos.&lt;br/&gt;  4. Revelar informaçoes sobre seu (time) para outros times é ruim e não apropriado&lt;br/&gt;   5.   Não explorar R3F ou qualquer outro complemento ou você será banido..&lt;br/&gt;    6. Usar ou spam com comandos de som personalizados altolongos causará punição até a ban permanente</Portuguese>
+		</Key>		
+	</Package>
+	<Package name="ShopDescriptions">
+		<Key ID="STR_WL_ShopDescriptions_Water">
+			<Original>Greece is a hot place! Drink plenty!</Original>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Camo">
+			<Original>An improvised roof, 4 sticks and a blanket!</Original>
+			<English>An improvised roof, 4 sticks and a blanket!</English>
+			<German>Ein improvisiertes Dach, 4 Stöcke und eine Decke!</German>
+			<French>Un toit improvisé, 4 bâtons et une couverture!</French>
+			<Turkish>Yapay çatı, 4 çubuk ve kamuflaj!</Turkish>
+			<Dutch>zelf gemaakte dak, 4 stokken en een deken!</Dutch>
+			<Russian>Маскировочная сеть. 4-ре стойки и маскировочная сеть поверх.</Russian>
+			<Czech>Improvizovaná střecha, 4 klacky a deka!</Czech>
+			<Portuguese>telhado improvisado 4 gravetos e 1 cobertor!</Portuguese>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Tower">
+			<Original>A shaking wooden Tower!</Original>
+			<English>A shaking wooden Tower!</English>
+			<German>Ein klappriger Holzturm!</German>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_CanFood">
+			<Original>The Greek wastelands may get you hungry!</Original>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_RepairKit">
+			<Original>With this kit, you won't need an engineer!</Original>
+			<English>With this kit, you won't need an engineer!</English>
+			<German>Ein Kit womit du keinen Pannendienst mehr brauchst!</German>
+			<French>Avec ce kit, vous n'aurez pas besoin d'un ingénieur!</French>
+			<Turkish>Bu kit ile mühendis olmanıza gerek yok!</Turkish>
+			<Dutch>met deze kit heb je geen monteur meer nodig!</Dutch>
+			<Russian>С этим комплектом вам не понадобится инженер!</Russian>
+			<Czech>S touto sadou nebudete potřebovat inženýra!</Czech>
+			<Portuguese>Com este kit, você não vai precisar de um engenheiro!</Portuguese>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Marijuana">
+			<Original>Get Relaxed!</Original>
+			<English>Get Relaxed!</English>
+			<German>Entspannen!</German>
+			<French>Détendez-vous!</French>
+			<Turkish>Biraz rahatlayın!</Turkish>
+			<Dutch>ga relexen!</Dutch>
+			<Russian>Теперь кайфуй!</Russian>
+			<Czech>Uvolněte se!</Czech>
+			<Portuguese>Sente a brisa!</Portuguese>
+			<Spanish>¡Relájate!</Spanish>
+			<Italian>Rilassati!</Italian>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_LSD">
+			<Original>WOAH! WHAT WAS THAT!</Original>
+			<English>WOAH! WHAT WAS THAT!</English>
+			<German>WOAH! WAS WAR DAS!</German>
+			<French>WOAH! CA C'ÉTAIT QUOI!</French>
+			<Turkish>WOW! BU DA NEYDİ?!</Turkish>
+			<Dutch>WOW! wat was dat!</Dutch>
+			<Russian>ОГО!! ЧО ЗА МУТЬ!</Russian>
+			<Czech>WOW! CO TO BYLO!</Czech>
+			<Portuguese>NOSSA!e muito forte!!!</Portuguese>
+			<Spanish>¡WOAH! ¡QUÉ FUE ESO!</Spanish>
+			<Italian>WOAH! CHE COS 'ERA QUESTO!</Italian>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Cocaine">
+			<Original>Get your twitch on!</Original>
+			<English>Get your twitch on!</English>
+			<German>Oh es zuckt!</German>
+			<French>Obtenez votre dose!</French>
+			<Turkish>Çekmek için al!</Turkish>
+			<Dutch>krijg je Twitch op!</Dutch>
+			<Russian>Дёргайся!</Russian>
+			<Czech>Ach to škube!</Czech>
+			<Portuguese>Da um teco no pó !</Portuguese>
+			<Spanish>¡Oh, se contrae!</Spanish>
+			<Italian>Oh si contrae!</Italian>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Heroin">
+			<Original>At this Stage, you may want to go to rehab.</Original>
+			<English>At this Stage, you may want to go to rehab.</English>
+			<German>Ein Kit womit du keinen Arzt mehr brauchst!</German>
+			<French>À ce stade, vous voudrez peut-être aller en cure de désintoxication.</French>
+			<Turkish>Bu aşamada rehabilitasyona gitmek isteyebilirsiniz.</Turkish>
+			<Dutch>op dit stadium wil je misschien gaan afkicken.</Dutch>
+			<Russian>На этой стадии вы можете пойти на реабилитацию.</Russian>
+			<Czech>V této fázi můžete jít na rehabilitaci.</Czech>
+			<Portuguese>Só injetar e ficar doido.</Portuguese>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Pinlock">
+			<Original>This programming tool is a once use only and non removable device to add a pincode to an owned vehicle. By using this your friends can also lock and unlock your vehicle!</Original>
+            <English>This programming tool is a once use only and non removable device to add a pincode to an owned vehicle. By using this your friends can also lock and unlock your vehicle!</English>
+        </Key>
+		<Key ID="STR_WL_ShopDescriptions_MedKit">
+			<Original>With this kit, you won't need a medic!</Original>
+			<English>With this kit, you won't need a medic!</English>
+			<German>Ein Kit womit du keinen Arzt mehr brauchst!</German>
+			<French>Avec ce kit, vous n'aurez pas besoin d'un médecin!</French>
+			<Turkish>Bu kit ile doktor olmanıza gerek yok!</Turkish>
+			<Dutch>met deze kit heb je geen doktor nodig!</Dutch>
+			<Russian>С этим набором вам не нужен медик!</Russian>
+			<Czech>Sada, se kterou již nepotřebujete lékaře!</Czech>
+			<Portuguese> Com esse kit, você não precisa de um médico!</Portuguese>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_fuelFull">
+			<Original>25 litres of pure unleaded fuel!</Original>
+			<English>25 litres of pure unleaded fuel!</English>
+			<German>25 Liter Benzinkanister!</German>
+			<French>25 litres de carburant sans plomb pur!</French>
+			<Turkish>25 litre saf kurşunsuz yakıt!</Turkish>
+			<Dutch>25 lieters van ongeloode benzine!</Dutch>
+			<Russian>Заправленна всклянь аш 25 л.</Russian>
+			<Czech>25 litrů čistého paliva!</Czech>
+			<Portuguese>25 Litros de gasolina pura!</Portuguese>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_fuelEmpty">
+			<Original>Empty fuel can. You can refill it!</Original>
+			<English>Empty fuel can. You can refill it!</English>
+			<German>Ein leerer Kanister, füll ihn auf!</German>
+			<French>Bidon de carburant vide. Vous pouvez le recharger!</French>
+			<Turkish>Boş benzin bidonu,doldurabilirsin!</Turkish>
+			<Dutch>een legen benzine kan, je kan hem vullen!</Dutch>
+			<Russian>Закончилось горючее. Нужно заправиться!</Russian>
+			<Czech>Prázdný kanystr. Můžete jej znovu naplnit!</Czech>
+			<Portuguese>sem gasolina dentro. você pode encher isto!</Portuguese>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_spawnBeacon">
+			<Original>Choose your spawn location. Disclaimer: This product does not guarantee safe delivery of goods.</Original>
+			<English>Choose your spawn location. Disclaimer: This product does not guarantee safe delivery of goods.</English>
+			<German>Wähle dein Spawnpunkt aus. Haftungsausschluss: Dieses Produkt garantiert keine sichere Lieferung.</German>
+			<French>Choisissez votre lieu d'apparition. Avis de non-responsabilité: ce produit ne garantit pas une livraison sûre des marchandises.</French>
+			<Turkish>Spawn bölgenizi belirleyin. Dikkat: Bu ürün malların güvenli bir şekilde ulaştırılmasını garantilemez.</Turkish>
+			<Dutch>kies je spawn punt. verwerping: dit product garandeert geen veilige aflevering van je spullen.</Dutch>
+			<Russian>Выберите место своего появления. Снятие ответственности: Этот продукт не гарантирует безопасную доставку товара.</Russian>
+			<Czech>Vyberte svou polohu. Prohlášení: Tento produkt nezaručuje bezpečné dodání zboží.</Czech>
+			<Portuguese> Selecione seu local de Spawn. Isenção de responsabilidade: Este produto não garante a entrega segura de mercadorias.</Portuguese>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_SyphonHose">
+			<Original>Go forth and steal fuel from vehicles!</Original>
+			<English>Go forth and steal fuel from vehicles!</English>
+			<German>Ein Kanister womit du den Tank von Fahrzeugen klauen kannst!</German>
+			<French>Allez-y et volez le carburant des véhicules!</French>
+			<Turkish>Yanlarına git ve araçlardan yakıt çal!</Turkish>
+			<Dutch>ga benzine stelen van andere voertuigen!</Dutch>
+			<Russian>Пойди и укради топливо из транспорта!</Russian>
+			<Czech>Kanystr, pomocí kterého můžete ukrást palivo vozidlům!</Czech>
+			<Portuguese> Vá em frente e roube combustível de veículos!</Portuguese>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Energy_Drink">
+			<Original>Allows you to sprint continuously for 5 minutes.</Original>
+			<English>Allows you to sprint continuously for 5 minutes.</English>
+			<German>Ein Getränk womit du 5 minuten sprinten kannst!</German>
+			<French>Vous permet de sprinter en continu pendant 5 minutes.</French>
+			<Turkish>5 Dakika boyunca durmadan koşmanızı sağlar.</Turkish>
+			<Dutch>laat je continu rennen voor de volgende 5 minuten.</Dutch>
+			<Russian>Позволяет бегать быстро в течение 5 минут.</Russian>
+			<Czech>Umožňuje rychlý běh po dobu 5 minut.</Czech>
+			<Portuguese>Permite que você corra continuamente por 5 minutos.</Portuguese>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Warchest">
+			<Original>A safe to store your team's money.</Original>
+			<English>A safe to store your team's money.</English>
+			<German>Ein Tresor zum sichern des Geldes!</German>
+			<French>Un coffre-fort pour stocker l'argent de votre équipe.</French>
+			<Turkish>Takımınızın parasını saklamak için bir kasa.</Turkish>
+			<Dutch>een kluis voor het geld van je groep in op te slaan.</Dutch>
+			<Russian>Сейф для хранения денег вашей команды.</Russian>
+			<Czech>Trezor, který zajistí vaše peníze!</Czech>
+			<Portuguese>Local seguro para guardar dinheiro do seu time.</Portuguese>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Stash">
+			<Original>A Bush to hide in!</Original>
+			<English>A Bush to hide in!</English>
+			<German>Ein Busch zum verstecken!</German>
+			<Turkish>Saklanmak için bir çalı!</Turkish>
+			<Dutch>een struik om je in te verstoppen!</Dutch>
+			<Russian>Маскировка Куст</Russian>
+			<Czech>Keř, do kterého se můžete schovat!</Czech>
+			<Portuguese>Uma moita para se esconder dentro!</Portuguese>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Pumpkin">
+			<Original>You do have now a pumpkin on your head!</Original>
+			<English>You do have now a pumpkin on your head!</English>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Gift">
+			<Original>Merry Xmas! This is your Gift.</Original>
+			<English>Merry Xmas! This is your Gift.</English>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Easter">
+			<Original>A strange ball! could be a Easter Egg.</Original>
+			<English>A strange ball! could be a Easter Egg.</English>
+			<German>Ein seltsamer Ball! könnte ein Osterei sein.</German>
+		</Key>
+		<Key ID="STR_WL_ShopDescriptions_Quad">
+			<Original>Just a mobile Quad</Original>
+			<English>Just a mobile Quad</English>
+			<German>Ein Mobiles Quad</German>
+			<Turkish>Sadece taşınılabilir ATV.</Turkish>
+			<Dutch>gewoon een mobiele quad</Dutch>
+			<Russian>Создать Квадроцикл</Russian>
+			<Czech>Mobilní čtyřkolka</Czech>
+			<Portuguese>Somente um quadriciclo</Portuguese>
+		</Key>
+	</Package>
+	<Package name="Dialogs">
+		<Key ID="STR_WL_dialog_TeamkillText">
+			<Original>You have been teamkilled by %2 player %1&lt;br/&gt;&lt;br/&gt;If this was an accident, forgive him, otherwise they should explain their actions.&lt;br/&gt;&lt;br/&gt;If the player does not apologize, punish him.</Original>
+			<English>You have been teamkilled by %2 player %1&lt;br/&gt;&lt;br/&gt;If this was an accident, forgive him, otherwise they should explain their actions.&lt;br/&gt;&lt;br/&gt;If the player does not apologize, punish him.</English>
+			<German>Du wurdest von dem Spieler %2 aus deinem Team getötet. %1&lt;br/&gt;&lt;br/&gt;Wenn dies ein Unfall war, vergib ihm, sonst sollten sie ihre Handlungen erklären.&lt;br/&gt;&lt;br/&gt;Wenn sich der Spieler nicht entschuldigt, bestrafen Sie ihn.</German>
+			<French>Vous avez été tuer (Tir allié) par %2 joueur %1&lt;br/&gt;&lt;br/&gt;Si c'était un accident, pardonnez-lui, sinon ils devra expliquer son action.&lt;br/&gt;&lt;br/&gt;Si le joueur ne s'excuse pas, punissez-le.</French>
+			<Turkish>Bir oyuncu tarafından öldürüldün %2. %1&lt;br/&gt;&lt;br/&gt;Eğer bu bir kaza ise onu affet yoksa yaptıklarını açıklamak zorundalar.&lt;br/&gt;&lt;br/&gt;Eğer özür dilemezse onu cezalandır!.</Turkish>
+			<Dutch>je bent gedood door %2 van je eigen groep %1&lt;br/&gt;&lt;br/&gt;als dit perongeluk ging vergeef hem dan anders moet hij zijn acties uitleggen.&lt;br/&gt;&lt;br/&gt;als hij zich niet verontschuldigd, straf hem.</Dutch>
+			<Russian>Вы были убиты своим %2 player %1&lt;br/&gt;&lt;br/&gt;Если это был несчастный случай, простите его, или он должен пояснить свои действия.&lt;br/&gt;&lt;br/&gt;Если игрок не извиняется, накажите его.</Russian>
+			<Czech>Zabil vás váš %2 hráč %1&lt;br/&gt;&lt;br/&gt;Pokud to byla nehoda, odpusť mu to, nebo by měl své jednání vysvětlit.&lt;br/&gt;&lt;br/&gt;Pokud se hráč neomluví, potrestejte ho.</Czech>
+			<Portuguese>Se você foi atropelado porum jogador %2  %1&lt;br/&gt;&lt;br/&gt;Se isso foi um acidente, perdoe-o, caso contrário eles devem explicar o motivo .&lt;br/&gt;&lt;br/&gt;Se o jogador não pedir desculpas, puni-lo.</Portuguese>
+		</Key>
+	</Package>
+	<Package name="Errors">
+		<Key ID="STR_WL_Errors_InProgress">
+			<Original>You are already performing another action!</Original>
+			<English>You are already performing another action!</English>
+			<German>Du bist dabei etwas anderes zu machen!</German>
+			<French>Vous effectuez déjà une autre action!</French>
+			<Turkish>Zaten farklı bir işlem yapıyorsunuz!</Turkish>
+			<Dutch>je bent al wat anders aan het doen!</Dutch>
+			<Russian>Вы уже выполняете другое действие!</Russian>
+			<Czech>Již provádíte jinou akci!</Czech>
+			<Portuguese>Você está realizando outra ação!</Portuguese>
+		</Key>
+		<Key ID="STR_WL_Errors_InVehicle">
+			<Original>You are currently busy!</Original>
+			<English>You are currently busy!</English>
+			<German>Du machst bereits etwas!</German>
+			<French>Vous êtes actuellement occupé!</French>
+			<Turkish>Şu anda meşgulsün!</Turkish>
+			<Dutch>je bent momenteel druk bezig!</Dutch>
+			<Russian>Вы сейчас заняты!</Russian>
+			<Czech>Jsi teď zaneprázdněný!</Czech>
+			<Portuguese> Você está ocupado no momento!</Portuguese>
+		</Key>
+		<Key ID="STR_WL_Errors_BeaconActive">
+			<Original>You already have an active spawn beacon!</Original>
+			<English>You already have an active spawn beacon!</English>
+			<German>Du hast bereits einen aktiven Spawnpunkt!</German>
+			<French>Vous avez déjà une balise de réapparition active!</French>
+			<Turkish>Zaten aktif bir spawn beaconun var!</Turkish>
+			<Dutch>je bent een ander spawnpunt actief!</Dutch>
+			<Russian>У вас уже есть активная палатка возрождения!</Russian>
+			<Czech>Už máte aktivní respawn stan!</Czech>
+			<Portuguese>Você Tem um Spawn Beacon ativo!</Portuguese>
+		</Key>
+		<Key ID="STR_WL_Errors_BeaconInVehicle">
+			<Original>You cannot enter a vehicle while placing a spawn beacon!</Original>
+			<English>You cannot enter a vehicle while placing a spawn beacon!</English>
+			<German>Du kannst in kein Fahrzeug einsteigen, denn du bist dabei einen Spawnpunkt zu setzten!</German>
+			<French>Vous ne pouvez pas entrer dans un véhicule en plaçant une balise de réapparition!</French>
+			<Turkish>Spawn beacon yerleştirirken arabaya binemezsin!</Turkish>
+			<Dutch>je kan niet in een voertuig stappen als je een spawnpunt neer zet!</Dutch>
+			<Russian>Вы не можете войти в транспорт, размещая палатку возрождения!</Russian>
+			<Czech>Do transportu nemůžete vstoupit umístěním stanu!</Czech>
+			<Portuguese>Você não pode entrar em um veículo enquanto coloca um Spawn Beacon!</Portuguese>
+		</Key>
+		<Key ID="STR_WL_Errors_BeaconTooMany">
+			<Original>You cannot take more spawn beacons!</Original>
+			<English>You cannot take more spawn beacons!</English>
+			<German>Du kannst nicht mehr Spawnpunkte setzten!</German>
+			<French>Vous ne pouvez pas prendre plus de balises de réapparition!</French>
+			<Turkish>Daha fazla spawn beacon alamazsın!</Turkish>
+			<Dutch>je kan niet meer spawnpunten pakken!</Dutch>
+			<Russian>Невозможно взять больше палаток возрождения!</Russian>
+			<Czech>Nelze vzít více spawn stanů!</Czech>
+			<Portuguese>Você não pode colocar mais spawn beacons!</Portuguese>
+		</Key>
+	</Package>
+	<Package name="Zone">
+		<Key ID="STR_Zone_Radioactive">
+			<Original>&lt;t color='#ff0000' size='2.5' &gt; Radioactive Zone entered, you need a Gas Mask! &lt;/t&gt;</Original>
+			<English>&lt;t color='#ff0000' size='2.5' &gt; Radioactive Zone entered, you need a Gas Mask! &lt;/t&gt;</English>
+			<German>&lt;t color='#ff0000' size='2.5' &gt; Radioaktive Zone betreten, Sie benötigen eine Gasmaske! &lt;/t&gt;</German>
+			<French>&lt;t color='#ff0000' size='2.5' &gt; Zone radioactive, vous avez besoin d'un masque à gaz! &lt;/t&gt;</French>
+			<Turkish>&lt;t color='#ff0000' size='2.5' &gt; Radyoaktif bölgeye girdin,Gaz Maskesine ihtiyacın var! &lt;/t&gt;</Turkish>
+			<Dutch>&lt;t color='#ff0000' size='2.5' &gt; radioactief gebied betreden, je hebt een gasmasker nodig! &lt;/t&gt;</Dutch>
+			<Russian>&lt;t color='#ff0000' size='2.5' &gt; Вошел в зону заражения. Требуется противогаз! &lt;/t&gt;</Russian>
+			<Czech>&lt;t color='#ff0000' size='2.5' &gt; Radioaktivní zóna, potřebujete plynovou masku! &lt;/t&gt;</Czech>
+			<Portuguese>&lt;t color='#ff0000' size='2,5' &gt; Você entrou em uma Zona Radioativa, você precisa de uma máscara de gás!&lt;/t&gt;</Portuguese>
+		</Key>
+		<Key ID="STR_Zone_Death">
+			<Original>&lt;t color='#ff0000' size='2.5' &gt; Warning!!! Death Zone entered. &lt;/t&gt;</Original>
+			<English>&lt;t color='#ff0000' size='2.5' &gt; Warning!!! Death Zone entered. &lt;/t&gt;</English>
+			<German>&lt;t color='#ff0000' size='2.5' &gt; Warnung!!! Todeszone betreten. &lt;/t&gt;</German>
+			<French>&lt;t color='#ff0000' size='2.5' &gt; Attention, vous rentrez dans une zone de mort, faites demi-tour. &lt;/t&gt;</French>
+			<Turkish>&lt;t color='#ff0000' size='2.5' &gt; Uyarı!!! Ölüm bölgesine girildi. &lt;/t&gt;</Turkish>
+			<Dutch>&lt;t color='#ff0000' size='2.5' &gt; waarschuwing!!! doden gebied betreden. &lt;/t&gt;</Dutch>
+			<Russian>&lt;t color='#ff0000' size='2.5' &gt; Внимание!! Территория смерти. &lt;/t&gt;</Russian>
+			<Czech>&lt;t color='#ff0000' size='2.5' &gt; Varování!! Území smrti. &lt;/t&gt;</Czech>
+			<Portuguese>&lt;t color='#ff0000' size='2,5' &gt; Aviso!!!Você entou na Zona da Morte. &lt;/t&gt; </Portuguese>
+		</Key>
+		<Key ID="STR_Zone_Gunstore">
+			<Original>&lt;t color='#ff0000' size='2.5' &gt; Please do not camp near Gunstores! &lt;/t&gt;</Original>
+			<English>&lt;t color='#ff0000' size='2.5' &gt; Please do not camp near Gunstores! &lt;/t&gt;</English>
+			<German>&lt;t color='#ff0000' size='2.5' &gt; Bitte campen Sie nicht in der Nähe von Gunstores! &lt;/t&gt;</German>
+			<French>&lt;t color='#ff0000' size='2.5' &gt; Veuillez ne pas camper près des Gunstores! &lt;/t&gt;</French>
+			<Turkish>&lt;t color='#ff0000' size='2.5' &gt; Lütfen Silah Dükkanlarının etrafına pusu kurmayın! &lt;/t&gt;</Turkish>
+			<Dutch>&lt;t color='#ff0000' size='2.5' &gt; graag niet campen in de buurt van wapen winkels &lt;/t&gt;</Dutch>
+			<Russian>&lt;t color='#ff0000' size='2.5' &gt; Пожалуйста, не кемперите возле оружейных магазинов! &lt;/t&gt;</Russian>
+			<Czech>&lt;t color='#ff0000' size='2.5' &gt; Prosím, nekempujte poblíž Gunstores! &lt;/t&gt;</Czech>
+			<Portuguese>&lt;t color='#ff0000' size='2.5' &gt; Por favor, não camperar perto de Gunstores!&lt;/t&gt;</Portuguese>
+		</Key>
+		<Key ID="STR_Zone_Gunstore2">
+			<Original>&lt;t color='#ff0000' size='2.5' &gt; Please keep in mind, Camping at Gunstores is forbidden, you can be punished by Admins. If you break this rule. &lt;/t&gt;</Original>
+			<English>&lt;t color='#ff0000' size='2.5' &gt; Please keep in mind, Camping at Gunstores is forbidden, you can be punished by Admins. If you break this rule. &lt;/t&gt;</English>
+			<German>&lt;t color='#ff0000' size='2.5' &gt; Bitte bedenken Sie, Camping in Gunstores ist verboten, Sie können von Admins bestraft werden. Wenn Sie diese Regel brechen. &lt;/t&gt;</German>
+			<French>&lt;t color='#ff0000' size='2.5' &gt; Veuillez garder à l'esprit que le camping dans les Gunstores est interdit, vous pouvez être puni par les administrateurs. Si vous enfreignez cette règle. &lt;/t&gt;</French>
+			<Turkish>&lt;t color='#ff0000' size='2.5' &gt; Silah Dükkanlarının etrafına pusu kurmanın yasak olduğunu unutma,eğer yaparsan Adminler seni cezalandırabilirler. &lt;/t&gt;</Turkish>
+			<Dutch>&lt;t color='#ff0000' size='2.5' &gt; graag onthouden dan het campen van wapen winkels verboden is en bestraft kan worden door admins als je deze regel breekt. &lt;/t&gt;</Dutch>
+			<Russian>&lt;t color='#ff0000' size='2.5' &gt; Пожалуйста, имейте в виду, что кемпинг в Gunstores запрещен, и наказывается администрацией-если вы нарушите это правило. &lt;/t&gt;</Russian>
+			<Czech>&lt;t color='#ff0000' size='2.5' &gt; Mějte na paměti, že kempování v Gunstores je zakázáno, můžete být potrestáni správci. Pokud toto pravidlo porušíte. &lt;/t&gt;</Czech>
+			<Portuguese>&lt;t color='#ff0000' size='2.5' &gt;  Por favor, tenha em mente, campeirar em Gunstores é proibido, você pode ser punido por admins. Se você quebrar essa regra .&lt;/t&gt;</Portuguese>
+		</Key>
+	</Package>
+	<Package name="Gunner">
+		<Key ID="STR_Gunner_Centurion">
+			<Original>&lt;t color='#ff0000' size='2.5' &gt; Re-enter the Turret to refill the Ammo.&lt;/t&gt;</Original>
+			<English>&lt;t color='#ff0000' size='2.5' &gt; Re-enter the Turret to refill the Ammo.&lt;/t&gt;</English>
+			<German>&lt;t color='#ff0000' size='2.5' &gt; Betritt das Geschütz erneut, um die Munition wieder aufzufüllen. &lt;/t&gt;</German>
+			<French>&lt;t color='#ff0000' size='2.5' &gt; Rentrez dans le Mk21 Centurion pour recharger les munitions. &lt;/t&gt;</French>
+			<Turkish>&lt;t color='#ff0000' size='2.5' &gt; Mermi doldurmak için Tareti tekrar kullanın. &lt;/t&gt;</Turkish>
+			<Dutch>&lt;t color='#ff0000' size='2.5' &gt; stap opnieuw in de Mk21 Centurion om hem te herlanden. &lt;/t&gt;</Dutch>
+			<Russian>&lt;t color='#ff0000' size='2.5' &gt; Перезайди в турель для пополнения боекомплекта. &lt;/t&gt;</Russian>
+			<Czech>&lt;t color='#ff0000' size='2.5' &gt; Jděte do věže doplnit munici.&lt;/t&gt;</Czech>
+			<Portuguese>&lt;t color='#ff0000' size='2.5' &gt; Reabasteça centurion Mk21.&lt;/t&gt;</Portuguese>
+		</Key>
+	</Package>
+	<Package name="PMenu">
+		<Key ID="STR_PMenu_Compass">
+			<Original>Compass</Original>
+			<English>Compass</English>
+			<German>Kompass</German>
+			<French>Boussole</French>
+			<Turkish>Pusula</Turkish>
+			<Dutch>kompas</Dutch>
+			<Russian>Компас</Russian>
+			<Czech>kompas</Czech>
+			<Portuguese>bússola</Portuguese>
+			<Spanish>Brújula</Spanish>
+			<Italian>Bussola</Italian>
+		</Key>
+		<Key ID="STR_PMenu_Messages">
+			<Original>Messages</Original>
+			<English>Messages</English>
+			<German>Messages</German>
+			<French>Messages</French>
+			<Turkish>Mesajlar</Turkish>
+			<Dutch>berichten</Dutch>
+			<Russian>Сообщение</Russian>
+			<Czech>Zprávy</Czech>
+			<Portuguese>Mensagens</Portuguese>
+			<Spanish>Mensajes</Spanish>
+			<Italian>Messaggi</Italian>
+		</Key>
+		<Key ID="STR_PMenu_ViewDist">
+			<Original>View Distance</Original>
+			<English>View Distance</English>
+			<German>Sichtweite</German>
+			<French>Distance de vue</French>
+			<Turkish>Görüş Uzaklığı</Turkish>
+			<Dutch>kijk afstand</Dutch>
+			<Russian>Дальность вида</Russian>
+			<Czech>Viditelnost</Czech>
+			<Portuguese>Dist.Visualizaçao</Portuguese>
+			<Spanish>Ver distancia</Spanish>
+			<Italian>Visualizza distanza</Italian>
+		</Key>
+		<Key ID="STR_PMenu_Effects">
+			<Original>Environmental Effects</Original>
+			<English>Environmental Effects</English>
+			<German>Landschafts Effekte</German>
+			<French>Cacher bruits ambiant</French>
+			<Turkish>Çevre Etkenleri</Turkish>
+			<Dutch>elementen bijwerkingen</Dutch>
+			<Russian>Окружающие эффекты</Russian>
+			<Czech>Krajinné efekty</Czech>
+			<Portuguese>Efeitos Ambientais</Portuguese>
+			<Spanish>efectos ambientales</Spanish>
+			<Italian>effetti ambientali</Italian>
+		</Key>
+		<Key ID="STR_PMenu_Groups">
+			<Original>Group Management</Original>
+			<English>Group Management</English>
+			<German>Gruppenmanagement</German>
+			<French>Gestion de groupe</French>
+			<Turkish>Grup Yönetimi</Turkish>
+			<Dutch>groep managment</Dutch>
+			<Russian>Добавить группу</Russian>
+			<Czech>Group Manažer</Czech>
+			<Portuguese>Gestão de Grupo</Portuguese>
+		</Key>
+		<Key ID="STR_PMenu_Airdrop">
+			<Original>Order Airdrop</Original>
+			<English>Order Airdrop</English>
+			<German>Airdrop Anfordern</German>
+			<French>Demander Airdrop</French>
+			<Turkish>Hava Yardımı Çağırma</Turkish>
+			<Dutch>airdrop inroepen</Dutch>
+			<Russian>Заказ авиа-грузов</Russian>
+			<Czech>Objednávka leteckého nákladu</Czech>
+			<Portuguese>Suprimento Aério</Portuguese>
+			<Spanish>Solicitar Airdrop</Spanish>
+			<Italian>Ordina Airdrop</Italian>
+		</Key>
+		<Key ID="STR_PMenu_Puniform">
+			<Original>Paint Uniform</Original>
+			<English>Paint Uniform</English>
+			<German>Uniform Färben</German>
+			<French>Peindre Uniforme</French>
+			<Turkish>Üniformanı Boya</Turkish>
+			<Dutch>uniform verven</Dutch>
+			<Russian>Окрас униформы</Russian>
+			<Czech>Barva Uniformy</Czech>
+			<Portuguese>Pintar Uniforme</Portuguese>
+			<Spanish>pintura Uniforme</Spanish>
+			<Italian>Vernice uniforme</Italian>
+		</Key>
+		<Key ID="STR_PMenu_Pvehicle">
+			<Original>Paint Vehicle</Original>
+			<English>Paint Vehicle</English>
+			<German>Fahrzeug Färben</German>
+			<French>Peindre vehicule</French>
+			<Turkish>Aracı Boya</Turkish>
+			<Dutch>voertuig verven</Dutch>
+			<Russian>Окрас транспорта</Russian>
+			<Czech>Barva Vozidla</Czech>
+			<Portuguese>Pintar veículo</Portuguese>
+			<Czech>seznam zabití</Czech>
+			<Portuguese>Pintar veículo</Portuguese>
+			<Spanish>pintura Vehículo</Spanish>
+			<Italian>Vernice veicolo</Italian>
+		</Key>
+		<Key ID="STR_PMenu_Killfeed">
+			<Original>Killfeed</Original>
+			<English>Killfeed</English>
+			<German>Killfeed</German>
+			<French>Liste des Kill</French>
+			<Turkish>Öldürme Kayıtları</Turkish>
+			<Dutch>doden lijst</Dutch>
+			<Russian>Список убийств</Russian>
+			<Czech>seznam zabití</Czech>
+			<Portuguese>Killfeed</Portuguese>
+			<Spanish>Killfeed</Spanish>
+			<Italian>Killfeed</Italian>
+		</Key>
+		<Key ID="STR_PMenu_MarkObj">
+			<Original>Mark object</Original>
+			<English>Mark object</English>
+			<German>Objekt Markieren</German>
+			<French>Mark obj.</French>
+			<Turkish>Hedefi İşaretle</Turkish>
+			<Dutch>obj markering.</Dutch>
+			<Russian>Пометить вещи.</Russian>
+			<Czech>Označte</Czech>
+			<Portuguese>Marcar obj.</Portuguese>
+			<Spanish>Marcar objeto</Spanish>
+			<Italian>Mark obj.</Italian>
+		</Key>
+		<Key ID="STR_PMenu_Close">
+			<Original>Close</Original>
+			<English>Close</English>
+			<German>Schließen</German>
+			<French>Fermer</French>
+			<Turkish>Kapat</Turkish>
+			<Dutch>sluiten</Dutch>
+			<Russian>Закрыть</Russian>
+			<Czech>Zavřít</Czech>
+			<Portuguese>Fechar</Portuguese>
+			<Spanish>Cerrar</Spanish>
+			<Italian>Chiuso</Italian>
+		</Key>
+		<Key ID="STR_PMenu_Main">
+			<Original>Player Menu</Original>
+			<English>Player Menu</English>
+			<German>Spieler Menu</German>
+			<French>Menu du joueur</French>
+			<Turkish>Oyuncu Menüsü</Turkish>
+			<Dutch>speler Menu</Dutch>
+			<Russian>Меню игрока</Russian>
+			<Czech>Player Menu</Czech>
+			<Spanish>Menú del jugador</Spanish>
+			<Italian>Player Menu</Italian>
+		</Key>
+		<Key ID="STR_PMenu_Donators">
+			<Original>Only for Donators</Original>
+			<English>Only for Donators</English>
+			<German>Nur für Spender</German>
+			<French>Uniquement pour les donateurs</French>
+			<Turkish>Sadece Bağışçılar İçin</Turkish>
+			<Dutch>alleen voor donateurs</Dutch>
+			<Russian>Только спонсоры</Russian>
+			<Czech>Pouze sponzoři</Czech>
+			<Portuguese>Somente para doadores</Portuguese>
+			<Spanish>Solo para Donantes</Spanish>
+			<Italian>Solo per donatori</Italian>
+		</Key>
+		<Key ID="STR_PMenu_ServerList">
+			<Original>Server list</Original>
+			<English>Server list</English>
+			<German>Serverliste</German>
+			<Russian>Список серверов</Russian>
+			<Czech>Server list</Czech>
+			<Portuguese>Lista do Servidor</Portuguese>
+			<Spanish>Lista de servidores</Spanish>
+			<Italian>Elenco dei server</Italian>
+		</Key>
+		<Key ID="STR_PMenu_Use">
+			<Original>Use</Original>
+			<English>Use</English>
+			<German>Benutzen</German>
+			<Spanish>Usar</Spanish>
+			<Italian>Utilizzo</Italian>
+		</Key>
+		<Key ID="STR_PMenu_DropItem">
+			<Original>Drop Item</Original>
+			<English>Drop Item</English>
+		</Key>
+		<Key ID="STR_PMenu_DropCash">
+			<Original>Drop Cash</Original>
+			<English>Drop Cash</English>
+			<German>Drop Geld</German>
+		</Key>
+		<Key ID="STR_PMenu_RulesHelp">
+			<Original>Rules / Info</Original>
+			<English>Rules / Info</English>
+			<German>Regeln / Info</German>
+			<Spanish>Reglas / Info</Spanish>
+			<Italian>Regole / Info</Italian>
+		</Key>
+		<Key ID="STR_PMenu_GearLevel">
+			<Original>Gear Level</Original>
+			<English>Gear Level</English>
+		</Key>
+		<Key ID="STR_PMenu_servListMods">
+			<Original>Server list / Mods</Original>
+			<English>Server list / Mods</English>
+			<German>Serverliste / Mods</German>
+			<Spanish>Lista servidores / Mods</Spanish>
+			<Italian>Elenco server / Mod</Italian>
+		</Key>
+	</Package>
+	<Package name="WNOTF">
+		<Key ID="STR_WNOTF_TeamBalance">
+			<Original>Team balancing doesn't apply to donators.</Original>
+			<English>Team balancing doesn't apply to donators.</English>
+			<German>Der Teamausgleich gilt nicht für Donator.</German>
+			<French>L'équilibrage d'équipe ne s'applique pas aux donateurs.</French>
+			<Turkish>Takım dengesi bağışçılar için geçerli değildir.</Turkish>
+			<Dutch>groep balanceering geld niet voor donateurs.</Dutch>
+			<Russian>Баланс сервера по командам - не влияет на спонсоров.</Russian>
+		</Key>
+	</Package>
+	<Package name="GNOTF">
+		<Key ID="STR_GNOTF_ServerRedirect">
+			<Original>This server is full, do you want to be redirected to A3W %1 ?</Original>
+			<English>This server is full, do you want to be redirected to A3W %1 ?</English>
+			<German>Dieser Server ist voll, möchten sie umgeleitet werden zu A3W %1 ?</German>
+			<Turkish>Bu sunucu şu anda doludur, A3W %1'e yönlendirilmek ister misiniz?</Turkish>
+			<Dutch>groep balanceering geld niet voor donateurs.</Dutch>
+			<Russian>Сервер заполнен. Хотите перенаправления на A3W %1 ?</Russian>
+			<Czech>Tento server je plný, chcete být přesměrováni na A3W %1 ?</Czech>
+			<Portuguese>Servidor cheio.Deseja voltar para A3W %1 ?</Portuguese>
+		</Key>
+		<Key ID="STR_GNOTF_Redirect">
+			<Original>You will be redirected now...</Original>
+			<English>You will be redirected now...</English>
+			<German>Sie werden jetzt umgeleitet...</German>
+			<Turkish>Şimdi yönlendirileceksiniz...</Turkish>
+			<Russian>Сейчас вы будете перенаправлены...</Russian>
+			<Czech>Nyní budete přesměrováni ...</Czech>
+			<Portuguese>Redirecionando agora...</Portuguese>
+		</Key>
+		<Key ID="STR_GNOTF_SaveLoadout">
+			<Original>Do you want to Save your Loadout for $%1?</Original>
+			<English>Do you want to Save your Loadout for $%1?</English>
+			<German>Möchten Sie Ihren Loadout für $%1 speichern?</German>
+			<Turkish>Ekipmanlarınızı $%1? karşılığında kayıt etmek istiyor musunuz?</Turkish>
+			<Russian>Желаете сохранить своё снаряжение за $%1?</Russian>
+			<Czech>Chcete uložit svoje vybavení za $%1?</Czech>
+			<Portuguese>Você deseja salvar seu Loadout por $%1?</Portuguese>
+		</Key>
+		<Key ID="STR_GNOTF_changeLoadout">
+			<Original>Your Loadout has been saved successfully.</Original>
+			<English>Your Loadout has been saved successfully.</English>
+			<German>Ihr Loadout wurde erfolgreich gespeichert.</German>
+			<Turkish>Ekipmanlarınız başarıyla kayıt edildi.</Turkish>
+			<Russian>Ваша экипировка успешно сохранена.</Russian>
+			<Czech>Vaše zařízení bylo úspěšně uloženo.</Czech>
+			<Portuguese>Seu Loadout foi salvo com sucesso.</Portuguese>
+		</Key>
+		<Key ID="STR_GNOTF_getLoadout">
+			<Original>Do you want to Load your saved Loadout for $%1?</Original>
+			<English>Do you want to Load your saved Loadout for $%1?</English>
+			<German>Möchten Sie Ihren gespeichertes Loadout für $%1 laden?</German>
+			<Turkish>Kayıt edilmiş ekipmanlarınızı $%1? karşılığında yüklemeyi istiyor musunuz?</Turkish>
+			<Russian>Вы хотите загрузить сохраненное снаряжение за $%1?</Russian>
+			<Czech>Chcete načíst uložené vybavení za $%1?</Czech>
+			<Portuguese>Você deseja carregar seu Loadout por $%1?</Portuguese>
+		</Key>
+		<Key ID="STR_GNOTF_setLoadout">
+			<Original>Your Loadout has been successfully loaded...</Original>
+			<English>Your Loadout has been successfully loaded...</English>
+			<German>Ihr Loadout wurde erfolgreich geladen ...</German>
+			<Turkish>Ekipmanlarınız başarıyla yüklendi...</Turkish>
+			<Russian>Ваше снаряжение успешно загружено...</Russian>
+			<Czech>Vaše zařízení bylo úspěšně načteno...</Czech>
+			<Portuguese>Seu Loadout foi carregado com sucesso...</Portuguese>
+		</Key>
+		<Key ID="STR_GNOTF_notMoney">
+			<Original>Not enough money!</Original>
+			<English>Not enough money!</English>
+			<German>Nicht genug Bargeld!</German>
+			<Turkish>Yeterince paranız yok!</Turkish>
+			<Russian>Недостаточно денег!</Russian>
+			<Czech>Nedostatek peněz!</Czech>
+			<Portuguese> Você não tem dinheiro!</Portuguese>
+		</Key>
+		<Key ID="STR_GNOTF_Yes">
+			<Original>Yes</Original>
+			<English>Yes</English>
+			<German>Ja</German>
+			<Turkish>Evet</Turkish>
+			<Russian>Да</Russian>
+			<Czech>Ano</Czech>
+			<Portuguese>Sim</Portuguese>
+			<Spanish>Sí</Spanish>
+			<Italian>Sì</Italian>
+		</Key>
+		<Key ID="STR_GNOTF_No">
+			<Original>No</Original>
+			<English>No</English>
+			<German>Nein</German>
+			<Turkish>Hayır</Turkish>
+			<Czech>Ne</Czech>
+			<Portuguese>Não</Portuguese>
+			<Spanish>No</Spanish>
+			<Italian>No</Italian>
+		</Key>
+	</Package>
+	<Package name="SMenu">
+		<Key ID="STR_SMenu_Connect">
+			<Original>Connect</Original>
+			<English>Connect</English>
+			<German>Verbinden</German>
+			<Russian>Соеденение</Russian>
+			<Turkish>Bağlan</Turkish>
+			<Czech>Připojit</Czech>
+			<Portuguese>conectou</Portuguese>
+			<Spanish>Conectar</Spanish>
+			<Italian>Collegare</Italian>
+		</Key>
+		<Key ID="STR_SMenu_Serverlist">
+			<Original>Server list</Original>
+			<English>Server list</English>
+			<German>Serverliste</German>
+			<Russian>Список серверов</Russian>
+			<Turkish>Sunucu Listesi</Turkish>
+			<Czech>Server list</Czech>
+			<Portuguese>Lista do Servidor</Portuguese>
+			<Spanish>Lista de servidores</Spanish>
+			<Italian>Elenco dei server</Italian>
+		</Key>
+		<Key ID="STR_SMenu_Informations">
+			<Original>Informations</Original>
+			<English>Informations</English>
+			<German>Informationen</German>
+			<Russian>Информация</Russian>
+			<Turkish>Bilgilendirmeler</Turkish>
+			<Czech>Informace</Czech>
+			<Portuguese>informação</Portuguese>
+			<Spanish>Informaciones</Spanish>
+			<Italian>Informazioni</Italian>
+		</Key>
+		<Key ID="STR_SMenu_RulesCMD">
+			<Original>Rules/Commands:</Original>
+			<English>Rules/Commands:</English>
+			<German>Regeln/Befehle:</German>
+			<Turkish>Kurallar/Komutlar:</Turkish>
+			<Czech>Pravidla/Příkazy:</Czech>
+			<Portuguese>Regras/Comandos:</Portuguese>
+			<Spanish>Reglas/Comandos</Spanish>
+			<Italian>Regole/Comandi</Italian>
+		</Key>
+		<Key ID="STR_SMenu_Vipactivated">
+			<Original>&lt;t color='#808080' &gt;(Vip days count as soon its activated by Admin)&lt;/t&gt;</Original>
+			<English>&lt;t color='#808080' &gt;(Vip days count as soon its activated by Admin)&lt;/t&gt;</English>
+			<German>&lt;t color='#808080' &gt;(VIP-Tage zählen, sobald sie von Admin aktiviert wurden)&lt;/t&gt;</German>
+			<Russian>&lt;t color='#808080' &gt;(VIP-дни засчитываются, как только они активированы администратором)&lt;/t&gt;</Russian>
+			<Turkish>&lt;t color='#808080' &gt;(VIP günleri, Admin tarafından aktif edildikten sonra sayılacaktır.)&lt;/t&gt;</Turkish>
+			<Czech>&lt;t color='#808080' &gt;(VIP dny se započítávají, jakmile je aktivuje správce)&lt;/t&gt;</Czech>
+			<Portuguese>&lt;t color='#808080' &gt;(Dias vips contam assim que é ativado pelo Administrador)&lt;/t&gt;</Portuguese>
+		</Key>
+		<Key ID="STR_SMenu_applySupporter">
+			<Original>&lt;color='#808080' &gt;Apply as Supporter: &lt;t color='#808080'&gt;-&lt;/t&gt; &lt;t colorLink='#3096e4'&gt;&lt;a href='https://forms.gle/KbR3rop2xc14GU1T9'>press here&lt;/a&gt;&lt;/t&gt;&lt;/t&gt;</Original>
+			<English>&lt;color='#808080' &gt;Apply as Supporter: &lt;t color='#808080'&gt;-&lt;/t&gt; &lt;t colorLink='#3096e4'&gt;&lt;a href='https://forms.gle/KbR3rop2xc14GU1T9'>press here&lt;/a&gt;&lt;/t&gt;&lt;/t&gt;</English>
+			<German>&lt;color='#808080' &gt;Bewerben zum Supporter: &lt;t color='#808080'&gt;-&lt;/t&gt; &lt;t colorLink='#3096e4'&gt;&lt;a href='https://forms.gle/KbR3rop2xc14GU1T9'>Hier drücken&lt;/a&gt;&lt;/t&gt;&lt;/t&gt;</German>
+			<Russian>&lt;color='#808080' &gt;Стать спонсором: &lt;t color='#808080'&gt;-&lt;/t&gt; &lt;t colorLink='#3096e4'&gt;&lt;a href='https://forms.gle/KbR3rop2xc14GU1T9'>жми сдесь&lt;/a&gt;&lt;/t&gt;&lt;/t&gt;</Russian>
+			<Turkish>&lt;color='#808080' &gt;Supporter olmak için: &lt;t color='#808080'&gt;-&lt;/t&gt; &lt;t colorLink='#3096e4'&gt;&lt;a href='https://forms.gle/KbR3rop2xc14GU1T9'>buraya tıklayınız&lt;/a&gt;&lt;/t&gt;&lt;/t&gt;</Turkish>
+			<Czech>&lt;color='#808080' &gt;Zažádejte si o podporu: &lt;t color='#808080'&gt;-&lt;/t&gt; &lt;t colorLink='#3096e4'&gt;&lt;a href='https://forms.gle/KbR3rop2xc14GU1T9'>klikněte zde&lt;/a&gt;&lt;/t&gt;&lt;/t&gt;</Czech>
+			<Portuguese>&lt;color='#808080' &gt;Inscreva-se como Apoiador:&lt;t color='#808080'&gt;-&lt;/t&gt;t colorLink='#3096e4'&gt;&lt;a href='https://forms.gle/KbR3rop2xc14GU1T9'>aperte aqui&lt;/a&gt;&lt;/t&gt;&lt;/t&gt;</Portuguese>
+		</Key>
+		<Key ID="STR_SMenu_pressM">
+			<Original>&lt;t color='#808080'&gt;Press &lt;/t&gt;&lt;t color='#3096e4'&gt;M&lt;/t&gt;&lt;t color='#808080'&gt; to view our Rules/Commands. (Map View)&lt;/t&gt;</Original>
+			<English>&lt;t color='#808080'&gt;Press &lt;/t&gt;&lt;t color='#3096e4'&gt;M&lt;/t&gt;&lt;t color='#808080'&gt; to view our Rules/Commands. (Map View)&lt;/t&gt;</English>
+			<German>&lt;t color='#808080'&gt;Drücken Sie, &lt;/t&gt;&lt;t color='#3096e4'&gt;M&lt;/t&gt;&lt;t color='#808080'&gt; um unsere Regeln / Befehle anzuzeigen. (Kartenansicht)&lt;/t&gt;</German>
+			<Russian>&lt;t color='#808080'&gt;Нажми &lt;/t&gt;&lt;t color='#3096e4'&gt;M&lt;/t&gt;&lt;t color='#808080'&gt; чтобы просмотреть наши Правила / Команды. (Просмотр карты)</Russian>
+			<Turkish>&lt;t color='#808080'&gt;Tıklayınız &lt;/t&gt;&lt;t color='#3096e4'&gt;M&lt;/t&gt;&lt;t color='#808080'&gt; Kuralları ve Komutları görmek için (Harita Üzerinden)&lt;/t&gt;</Turkish>
+			<Czech>&lt;t color='#808080'&gt;Klikněte &lt;/t&gt;&lt;t color='#3096e4'&gt;M&lt;/t&gt;&lt;t color='#808080'&gt; k zobrazení našich pravidel/příkazů. (Otevřte mapu)&lt;/t&gt;</Czech>
+			<Portuguese>&lt;t color='#808080'&gt;Aperte &lt;/t&gt;&lt;t color='#3096e4'&gt;M&lt;/t&gt;&lt;t color='#808080'&gt;Para ver Regras/comandos.(Ver mapa)&lt;/t&gt;</Portuguese>
+		</Key>
+		<Key ID="STR_SMenu_Vipsubscribe">
+			<Original>&lt;t colorLink='#3096e4'&gt;&lt;a href='https://www.noaim.live/shop/index.php?category/21-arma-3-wasteland/'&gt;Click to subscribe&lt;/a&gt;&lt;/t&gt;&lt;t color='#808080'&gt; - for reserved slots, perks and team balance immunity.&lt;/t&gt;</Original>
+			<English>&lt;t colorLink='#3096e4'&gt;&lt;a href='https://www.noaim.live/shop/index.php?category/21-arma-3-wasteland/'&gt;Click to subscribe&lt;/a&gt;&lt;/t&gt;&lt;t color='#808080'&gt; - for reserved slots, perks and team balance immunity.&lt;/t&gt;</English>
+			<German>&lt;t colorLink='#3096e4'&gt;&lt;a href='https://www.noaim.live/shop/index.php?category/21-arma-3-wasteland/'&gt;VIP freischalten&lt;/a&gt;&lt;/t&gt;&lt;t color='#808080'&gt; - für reservierte Slots, Vergünstigungen und Immunität gegen Teambalance.&lt;/t&gt;</German>
+			<Russian>&lt;t colorLink='#3096e4'&gt;&lt;a href='https://www.noaim.live/shop/index.php?category/21-arma-3-wasteland/'&gt;Активировать VIP&lt;/a&gt;&lt;/t&gt;&lt;t color='#808080'&gt; - Для резервных слотов, перков и иммунитета к балансу команд.&lt;/t&gt;</Russian>
+			<Turkish>&lt;t colorLink='#3096e4'&gt;&lt;a href='https://www.noaim.live/shop/index.php?category/21-arma-3-wasteland/'&gt;VIP olmak için tıkla&lt;/a&gt;&lt;/t&gt;&lt;t color='#808080'&gt; - rezerve slotlar, avantajlar ve takım dengesinden etkilenmemek için.&lt;/t&gt;</Turkish>
+			<Czech>&lt;t colorLink='#3096e4'&gt;&lt;a href='https://www.noaim.live/shop/index.php?category/21-arma-3-wasteland/'&gt;Kliknutím se přihlásíte k odběru&lt;/a&gt;&lt;/t&gt;&lt;t color='#808080'&gt; - pro vyhrazené sloty, výhody a imunitu týmové rovnováhy.&lt;/t&gt;</Czech>
+			<Portuguese>&lt;t colorLink='#3096e4'&gt;&lt;a href='https://www.noaim.live/shop/index.php?category/21-arma-3-wasteland/'&gt;Aperte para se escrever&lt;/a&gt;&lt;/t&gt;&lt;t color='#808080'&gt;- Para reservar slots e ter imunidade de Team balance.&lt;/t&gt;</Portuguese>
+		</Key>
+		<Key ID="STR_SMenu_activeLoadout">
+			<Original>(The Loadout will be activated within the next game restart, reconnect or death)</Original>
+			<English>(The Loadout will be activated within the next game restart, reconnect or death)</English>
+			<German>(Das Loadout wird beim nächsten Neustart, Tod oder erneuten Verbinden aktiviert)</German>
+			<Russian>(Снаряжение будет активировано при следующей загрузке, смерти или повторном подключении)</Russian>
+			<Czech>(Zařízení bude aktivováno při příštím spuštění, smrti nebo opětovném připojení)</Czech>
+			<Portuguese>(O Loadout será ativado no proximo reinicio reconexão ou morte)</Portuguese>
+			<Turkish>(Ekipmanlar gelecek oyun restartında, tekrar bağlanmada veya ölümden sonra aktif olacaktır)</Turkish>
+		</Key>
+		<Key ID="STR_SMenu_chooseLoadout">
+			<Original>Choose your Loadout</Original>
+			<English>Choose your Loadout</English>
+			<German>Wählen Sie Ihren Loadout</German>
+			<Russian>Выберите снаряжение</Russian>
+			<Turkish>Ekipmanını seç</Turkish>
+			<Czech>Vyberte si svůj Loadout</Czech>
+			<Portuguese>Selecione seu Loadout</Portuguese>
+		</Key>
+		<Key ID="STR_SMenu_randomLoadout">
+			<Original>Random Loadout</Original>
+			<English>Random Loadout</English>
+			<German>Zufalls Loadout</German>
+			<Russian>Случайное снаряжение</Russian>
+			<Turkish>Rastgele Ekipman</Turkish>
+			<Czech>Náhodný Loadout</Czech>
+			<Portuguese>Loadout Aleatorio</Portuguese>
+		</Key>
+		<Key ID="STR_SMenu_dynamicLoadout">
+			<Original>Dynamic Loadout</Original>
+			<English>Dynamic Loadout</English>
+			<German>Dynamic Loadout</German>
+			<Russian>Динамическая загрузка</Russian>
+			<Czech>Dynamický Loadout</Czech>
+			<Portuguese>Loadout Dinamico</Portuguese>
+		</Key>
+		<Key ID="STR_SMenu_randomSpawn">
+			<Original>Random</Original>
+			<English>Random</English>
+			<German>Zufall</German>
+			<Russian>Случайно</Russian>
+			<Turkish>Rastgele</Turkish>
+			<Czech>Náhodný</Czech>
+			<Portuguese>Spawn Aleatorio</Portuguese>
+		</Key>
+		<Key ID="STR_SMenu_randomHalo">
+			<Original>Random Halo Jump</Original>
+			<English>Random Halo Jump</English>
+			<German>Zufalls Halo Jump</German>
+			<Russian>Случайный прыжок с парашютом</Russian>
+			<Turkish>Rastgele Paraşüt Atlayışı</Turkish>
+			<Czech>Náhodný Halo Jump</Czech>
+			<Portuguese>Halo jump</Portuguese>
+		</Key>
+		<Key ID="STR_SMenu_requireDLCapex">
+			<Original>Apex DLC Required</Original>
+			<English>Apex DLC Required</English>
+			<German>Apex DLC benötigt</German>
+			<Russian>Требуется DLC Apex</Russian>
+			<Turkish>Apex DLC gerekli</Turkish>
+			<Czech>Vyžadováno Apex DLC</Czech>
+			<Portuguese>Precisa-se DLC Apex</Portuguese>
+		</Key>
+		<Key ID="STR_SMenu_requireDLCmark">
+			<Original>Marksmen DLC Required</Original>
+			<English>Marksmen DLC Required</English>
+			<German>Marksmen DLC benötigt</German>
+			<Russian>Требуется DLC Marksmen</Russian>
+			<Turkish>Marksmen DLC gerekli</Turkish>
+			<Czech>Vyžadováno Marksmen DLC</Czech>
+			<Portuguese>Precisa-se DLC Marksmen</Portuguese>  
+		</Key>
+		<Key ID="STR_SMenu_requireDLCcontact">
+			<Original>Contact DLC Required</Original>
+			<English>Contact DLC Required</English>
+			<German>Contact DLC benötigt</German>
+			<Russian>Требуется DLC Contact</Russian>
+			<Turkish>Contact DLC gerekli</Turkish>
+			<Czech>Vyžadováno Contact DLC</Czech>
+			<Portuguese>Precisa-se DLC Contact</Portuguese>  
+		</Key>
+	</Package>
+	<Package name="VIPfeatures">
+		<Key ID="STR_VIP_HVTColor">
+			<Original>HVT Color</Original>
+			<English>HVT Color</English>
+			<German>HVT Farbe</German>
+			<Spanish>HVT Color</Spanish>
+			<Italian>HVT Colore</Italian>
+		</Key>
+		<Key ID="STR_VIP_HVTColorRec">
+			<Original>Please reconnect to save changes</Original>
+			<English>Please reconnect to save changes</English>
+			<German>Erneut verbinden um zu Speichern</German>
+		</Key>
+		<Key ID="STR_VIP_HVTCButton1">
+			<Original>Color - Red (no Vip)</Original>
+			<English>Color - Red (no Vip)</English>
+			<German>Farbe - Rot (kein Vip)</German>
+			<Spanish>Color - Rojo (no VIP)</Spanish>
+			<Italian>Colore - Rosso (no VIP)</Italian>
+		</Key>
+		<Key ID="STR_VIP_HVTCButton2">
+			<Original>Color - Orange</Original>
+			<English>Color - Orange</English>
+			<German>Farbe - Orange</German>
+			<Spanish>Color - Naranja</Spanish>
+			<Italian>Colore - Arancione</Italian>
+		</Key>
+		<Key ID="STR_VIP_HVTCButton3">
+			<Original>Color - Pink</Original>
+			<English>Color - Pink</English>
+			<German>Farbe - Pink</German>
+			<Spanish>Color - Rosa</Spanish>
+			<Italian>Colore - Rosa</Italian>
+		</Key>
+		<Key ID="STR_VIP_HVTCButton4">
+			<Original>Color - Pink/Red</Original>
+			<English>Color - Pink/Red</English>
+			<German>Farbe - Pink-Rot</German>
+			<Spanish>Color - Rosa/Roja</Spanish>
+			<Italian>Colore - Rosa/Rossa</Italian>
+		</Key>
+		<Key ID="STR_VIP_HVTCButton5">
+			<Original>Color - Blue/Gray</Original>
+			<English>Color - Blue/Gray</English>
+			<German>Farbe - Blau-Grau</German>
+			<Spanish>Color - Azul/Gris</Spanish>
+			<Italian>Colore - Blu/Grigio</Italian>
+		</Key>
+		<Key ID="STR_VIP_HVTCButton6">
+			<Original>Color - Purple</Original>
+			<English>Color - Purple</English>
+			<German>Farbe - Violet</German>
+			<Spanish>Color - Morada</Spanish>
+			<Italian>Colore - Viola</Italian>
+		</Key>
+		<Key ID="STR_VIP_HVTCButton7">
+			<Original>Color - Golden</Original>
+			<English>Color - Golden</English>
+			<German>Farbe - Gold Gelb</German>
+			<Spanish>Color - Dorada</Spanish>
+			<Italian>Colore - D'oro</Italian>
+		</Key>
+		<Key ID="STR_VIP_HVTCButton0">
+			<Original>Color - Yellow (Vip)</Original>
+			<English>Color - Yellow (Vip)</English>
+			<German>Farbe - Gelb (Vip)</German>
+			<Spanish>Color - Amarilla (Vip)</Spanish>
+			<Italian>Colore - Gialla (Vip)</Italian>
+		</Key>
+	</Package>
+	<Package name="AWStores">
+		<Key ID="STR_AW_Buy">
+			<Original>Buy</Original>
+			<English>Buy</English>
+			<German>Kaufen</German>
+		</Key>
+		<Key ID="STR_AW_Ordnance">
+			<Original>Grenades/Mines</Original>
+			<English>Grenades/Mines</English>
+			<German>Granaten/Minen</German>
+		</Key>
+		<Key ID="STR_AW_sellWeapon">
+			<Original>Sell Weapon</Original>
+			<English>Sell Weapon</English>
+			<German>Waffe verkaufen</German>
+		</Key>
+		<Key ID="STR_AW_sellUniform">
+			<Original>Sell Uniform</Original>
+			<English>Sell Uniform</English>
+			<German>Uniform verkaufen</German>
+		</Key>
+		<Key ID="STR_AW_sellVest">
+			<Original>Sell Vest</Original>
+			<English>Sell Vest</English>
+			<German>Vest verkaufen</German>
+		</Key>
+		<Key ID="STR_AW_sellBackpack">
+			<Original>Sell Backpack</Original>
+			<English>Sell Backpack</English>
+			<German>Rucksack verkaufen</German>
+		</Key>
+		<Key ID="STR_AW_Cancel">
+			<Original>Cancel</Original>
+			<English>Cancel</English>
+			<German>Abbrechen</German>
+		</Key>
+		<Key ID="STR_AW_Select">
+			<Original>Select Weapon</Original>
+			<English>Select Weapon</English>
+			<German>Waffe Auswählen</German>
+		</Key>
+		<Key ID="STR_AW_SelectScope">
+			<Original>Select Scope</Original>
+			<English>Select Scope</English>
+			<German>Visier Auswählen</German>
+		</Key>
+		<Key ID="STR_AW_noHandgun">
+			<Original>No Handgun</Original>
+			<English>No Handgun</English>
+			<German>No Handgun</German>
+		</Key>
+	</Package>
+</Project>
