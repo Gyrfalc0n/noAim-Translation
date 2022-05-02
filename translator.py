@@ -1,11 +1,7 @@
-from distutils.command.build_scripts import first_line_re
-from re import T
 import sys, os, shutil
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from app import *
 from lxml import etree
-import time
-
 
 # Global variables
 original_file = "stringtable.xml"
@@ -25,6 +21,7 @@ package_names = []
 key_names = []
 key_original = [] # List of all key values of original language
 key_values = [] # List of all key values of selected language
+key_lines = []
 package_names_unique = []
 revision_mode = False
 
@@ -102,13 +99,33 @@ class Window(QMainWindow, Ui_MainWindow):
                 else:
                     translate = ""
                     key_values.append(translate)
-                print("Original: " + original)
-                print("Translate: " + translate)
                 count_key += 1
             # Display first element
             self.update()
         else: # Not first launch
-            print("Not first launch")
+            text = self.text_translation_3.toPlainText()
+            if text != "":
+                print("write")
+        
+    def update_lines(self):
+        global key_lines
+        key_lines = [] # reset table
+        file = open(tempfile, "r", encoding="utf8")
+        for i in range(len(key_values)):
+            new = False
+            if key_values[i] == "": # if no translation exist for selected language and key
+                phrase = key_original[i] # phrase to search in file is the original key
+                new = True
+            else:
+                phrase = key_values[i] # phrase to search in file is the previously translated key
+            for number, line in enumerate(file):
+                if phrase in line:
+                    if new:
+                        line_number = number + 2 # line to which we will append new line
+                    else:
+                         line_number = number# line to which we will modify translation
+                    break
+            key_lines.append(line_number)
     
     def update(self):
         global index, project, revision_mode
@@ -136,12 +153,11 @@ class Window(QMainWindow, Ui_MainWindow):
                 break
         value = round((index + 1) *100/ count_key)
         self.progressBar_3.setProperty("value", value)
-
-        
-        
+        self.update_lines()
+        print(key_lines)
+                
     def reset(self):
-        self.update()
-    
+        self.update()    
 
 # Qt5 Application main
 if __name__ == "__main__":
