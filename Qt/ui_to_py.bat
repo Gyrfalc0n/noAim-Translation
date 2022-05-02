@@ -1,0 +1,1 @@
+python3.10 -m PyQt5.uic.pyuic -x app.ui -o ../app.py
