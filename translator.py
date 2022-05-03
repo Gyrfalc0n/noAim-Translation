@@ -154,7 +154,7 @@ class Window(QMainWindow, Ui_MainWindow):
         value = round((index + 1) *100/ count_key)
         self.progressBar_3.setProperty("value", value)
         self.update_lines()
-        print(key_lines)
+        print(key_original)
                 
     def reset(self):
         self.update()    
