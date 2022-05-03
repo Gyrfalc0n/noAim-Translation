@@ -107,7 +107,7 @@ class Window(QMainWindow, Ui_MainWindow):
             if text != "":
                 print("write")
         
-    def update_lines():
+    def update_lines(self):
         global key_lines
         key_lines = [] # reset table
         file = open(tempfile, "r", encoding="utf8")
