@@ -107,23 +107,29 @@ class Window(QMainWindow, Ui_MainWindow):
             if text != "":
                 print("write")
         
-    def update_lines(self):
+    def update_lines():
         global key_lines
         key_lines = [] # reset table
         file = open(tempfile, "r", encoding="utf8")
+        lines = file.readlines()
         for i in range(len(key_values)):
+            line_count = 0
             new = False
             if key_values[i] == "": # if no translation exist for selected language and key
+                print(str(i+1) + ": no translation for key: " + key_original[i])
                 phrase = key_original[i] # phrase to search in file is the original key
                 new = True
             else:
                 phrase = key_values[i] # phrase to search in file is the previously translated key
-            for number, line in enumerate(file):
+                print(str(i+1) + ": translated key: " + phrase)
+            for line in lines:
+                line_count += 1                      
                 if phrase in line:
+                    print("\t\tfound in line: " + str(line_count))
                     if new:
-                        line_number = number + 2 # line to which we will append new line
+                        line_number = line_count + 1 # line to which we will append new line
                     else:
-                         line_number = number# line to which we will modify translation
+                         line_number = line_count # line to which we will modify translation
                     break
             key_lines.append(line_number)
     
@@ -154,7 +160,7 @@ class Window(QMainWindow, Ui_MainWindow):
         value = round((index + 1) *100/ count_key)
         self.progressBar_3.setProperty("value", value)
         self.update_lines()
-        print(key_original)
+        print(key_lines)
                 
     def reset(self):
         self.update()    
