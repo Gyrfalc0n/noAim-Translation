@@ -2,6 +2,7 @@ import sys, os, shutil
 from PyQt5.QtWidgets import QApplication, QMainWindow
 from app import *
 from lxml import etree
+import html
 
 # Global variables
 original_file = "stringtable.xml"
@@ -16,6 +17,7 @@ count_package = 0
 count_key = 0
 index = 0 # current index
 project = ""
+prev_line = 0
 # Table
 package_names = []
 key_names = []
@@ -24,6 +26,7 @@ key_values = [] # List of all key values of selected language
 key_lines = []
 package_names_unique = []
 revision_mode = False
+unescape_mode = True
 
 # Qt5 Application
 class Window(QMainWindow, Ui_MainWindow):
@@ -36,6 +39,7 @@ class Window(QMainWindow, Ui_MainWindow):
         self.next_3.clicked.connect(self.next)
         self.confirm_3.clicked.connect(self.confirm)
         self.reset_3.clicked.connect(self.reset)
+        self.languages_3.addItem("Select language")
         self.languages_3.addItem("English")
         self.languages_3.addItem("French")
         self.languages_3.addItem("Spanish")
@@ -45,7 +49,7 @@ class Window(QMainWindow, Ui_MainWindow):
         self.languages_3.addItem("Czech")
         self.languages_3.addItem("Portuguese")
         self.text_original_3.setPlainText("Please select a language from the dropdown above and click 'Confirm translation' to continue.")
-        self.text_translation_3.setPlainText("Activate 'Revision Mode' to review previous translations for selected language.")
+        self.text_translation_3.setPlainText("Activate 'Revision Mode' to review previous translations for selected language.\nActivate 'Unescape HTML' to remove HTML tags from translation and original text (activated by default).")
     
     # Core Function
     first_launch = True
@@ -73,7 +77,7 @@ class Window(QMainWindow, Ui_MainWindow):
         
     def confirm(self):
         global count_package, count_key, key_original, key_values, package_names, key_names, project, package_names_unique
-        if self.languages_3.currentText() != "English" and self.first_launch:
+        if self.languages_3.currentText() != "Select language" and self.first_launch:
             # First launch
             self.first_launch = False
             self.clear()
@@ -91,16 +95,27 @@ class Window(QMainWindow, Ui_MainWindow):
                 package_parent = parent.attrib['name']
                 package_names.append(package_parent)
                 # get specific key
-                original = tree.xpath("/Project/Package/Key[@ID='" + key.attrib['ID'] + "']/Original")[0].text
-                key_original.append(original)
+                original = tree.xpath("/Project/Package/Key[@ID='" + key.attrib['ID'] + "']/Original")[0]
+                if "Apply as Supporter" in original.text:
+                    print("text : " + original.text)
+                original2 = etree.tostring(original, encoding="utf-8").decode("utf-8")
+                if "Apply as Supporter" in original2:
+                    print("tostring : " + original2)
+                original2 = original2.replace("<Original>", "")
+                original2 = original2.replace("</Original>", "")
+                key_original.append(original2)
                 if tree.xpath("/Project/Package/Key[@ID='" + key.attrib['ID'] + "']/" + selected_language): # Check if key has translation in selected language
-                    translate = tree.xpath("/Project/Package/Key[@ID='" + key.attrib['ID'] + "']/" + selected_language)[0].text
-                    key_values.append(translate)
+                    translate = tree.xpath("/Project/Package/Key[@ID='" + key.attrib['ID'] + "']/" + selected_language)[0]
+                    translate2 = etree.tostring(translate, encoding="utf-8").decode("utf-8")
+                    translate2 = translate2.replace("<" + selected_language + ">", "")
+                    translate2 = translate2.replace("</" + selected_language + ">", "")
+                    key_values.append(translate2)
                 else:
                     translate = ""
                     key_values.append(translate)
                 count_key += 1
             # Display first element
+            self.update_lines()
             self.update()
         else: # Not first launch
             text = self.text_translation_3.toPlainText()
@@ -108,7 +123,7 @@ class Window(QMainWindow, Ui_MainWindow):
                 print("write")
         
     def update_lines(self):
-        global key_lines
+        global key_lines, prev_line
         key_lines = [] # reset table
         file = open(tempfile, "r", encoding="utf8")
         lines = file.readlines()
@@ -116,29 +131,41 @@ class Window(QMainWindow, Ui_MainWindow):
             line_count = 0
             new = False
             if key_values[i] == "": # if no translation exist for selected language and key
-                print(str(i+1) + ": no translation for key: " + key_original[i])
+                #print(str(i+1) + ": no translation for key: " + key_original[i])
                 phrase = key_original[i] # phrase to search in file is the original key
                 new = True
             else:
                 phrase = key_values[i] # phrase to search in file is the previously translated key
-                print(str(i+1) + ": translated key: " + phrase)
+                #print(str(i+1) + ": translated key: " + phrase)
+            phrase = phrase.replace('\t', "")
+            phrase = phrase.replace('\n', "")
+            # remove xml tag
             for line in lines:
-                line_count += 1                      
-                if phrase in line:
-                    print("\t\tfound in line: " + str(line_count))
+                line = line.replace('\t', "")
+                line = line.replace('\n', "")
+                line_count += 1
+                phrase = html.unescape(phrase)
+                line = html.unescape(line)           
+                if phrase in line and line_count > prev_line:
+                    #file2.writelines("\t\tfound in line: " + str(line_count) + "\n")
                     if new:
                         line_number = line_count + 1 # line to which we will append new line
                     else:
                          line_number = line_count # line to which we will modify translation
+                    prev_line = line_number
                     break
             key_lines.append(line_number)
     
     def update(self):
-        global index, project, revision_mode
+        global index, project, revision_mode, unescape_mode
         if self.checkBox_revision.isChecked():
             revision_mode = True
         else:
             revision_mode = False
+        if self.checkBox_unescape.isChecked():
+            unescape_mode = True
+        else:
+            unescape_mode = False
         while True:
             original_text = key_original[index]
             translated = key_values[index]
@@ -149,6 +176,9 @@ class Window(QMainWindow, Ui_MainWindow):
                 if index > count_key - 1:
                     index = 0
         self.clear()
+        if unescape_mode:
+            original_text = html.unescape(original_text)
+            translated = html.unescape(translated)
         self.text_translation_3.setPlainText(translated)
         self.text_original_3.setPlainText(original_text)
         self.label_key_text_3.setText(key_names[index] + " (" + str(index + 1) + "/" + str(count_key) + ")")
@@ -159,8 +189,6 @@ class Window(QMainWindow, Ui_MainWindow):
                 break
         value = round((index + 1) *100/ count_key)
         self.progressBar_3.setProperty("value", value)
-        self.update_lines()
-        print(key_lines)
                 
     def reset(self):
         self.update()    

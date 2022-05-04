@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1063</width>
+    <width>1047</width>
     <height>671</height>
    </rect>
   </property>
@@ -20,11 +20,17 @@
    <widget class="QGroupBox" name="box_translation">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>4</x>
       <y>330</y>
-      <width>1045</width>
+      <width>1041</width>
       <height>158</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>10</pointsize>
+     </font>
     </property>
     <property name="title">
      <string>TRANSLATION</string>
@@ -43,11 +49,17 @@
    <widget class="QGroupBox" name="box_actions">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>4</x>
       <y>494</y>
-      <width>1045</width>
+      <width>1041</width>
       <height>159</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>10</pointsize>
+     </font>
     </property>
     <property name="title">
      <string>ACTIONS</string>
@@ -77,7 +89,7 @@
          </font>
         </property>
         <property name="value">
-         <number>24</number>
+         <number>0</number>
         </property>
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
@@ -119,6 +131,28 @@
         </property>
         <property name="text">
          <string>Revision mode</string>
+        </property>
+       </widget>
+       <widget class="QCheckBox" name="checkBox_unescape">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>131</width>
+          <height>17</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Century Gothic</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Unescape mode</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
         </property>
        </widget>
       </widget>
@@ -222,11 +256,17 @@
    <widget class="QGroupBox" name="box_original">
     <property name="geometry">
      <rect>
-      <x>0</x>
+      <x>4</x>
       <y>165</y>
-      <width>1045</width>
+      <width>1041</width>
       <height>159</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>10</pointsize>
+     </font>
     </property>
     <property name="title">
      <string>ORIGINAL TEXT</string>
@@ -248,21 +288,125 @@
    <widget class="QGroupBox" name="box_infos">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>1045</width>
-      <height>159</height>
+      <x>4</x>
+      <y>8</y>
+      <width>1041</width>
+      <height>151</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Century Gothic</family>
+      <pointsize>10</pointsize>
+     </font>
     </property>
     <property name="title">
      <string>INFORMATIONS</string>
     </property>
     <layout class="QGridLayout" name="gridLayout_3">
+     <item row="4" column="0">
+      <widget class="QLabel" name="label_project_text_3">
+       <property name="font">
+        <font>
+         <family>Century Gothic</family>
+         <pointsize>12</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
      <item row="4" column="1">
       <widget class="QLabel" name="label_package_text_3">
        <property name="font">
         <font>
-         <pointsize>15</pointsize>
+         <family>Century Gothic</family>
+         <pointsize>12</pointsize>
+         <italic>false</italic>
+        </font>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLabel" name="label_package_3">
+       <property name="font">
+        <font>
+         <family>Century Gothic</family>
+         <pointsize>17</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+        </font>
+       </property>
+       <property name="text">
+        <string>Package</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QComboBox" name="languages_3">
+       <property name="currentText">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLabel" name="label_key_3">
+       <property name="font">
+        <font>
+         <family>Century Gothic</family>
+         <pointsize>17</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+        </font>
+       </property>
+       <property name="text">
+        <string>Key</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QLabel" name="label_language_3">
+       <property name="font">
+        <font>
+         <family>Century Gothic</family>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Language to translate to</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QLabel" name="label_key_text_3">
+       <property name="font">
+        <font>
+         <family>Century Gothic</family>
+         <pointsize>12</pointsize>
          <italic>false</italic>
         </font>
        </property>
@@ -278,7 +422,8 @@
       <widget class="QLabel" name="label_project_3">
        <property name="font">
         <font>
-         <pointsize>20</pointsize>
+         <family>Century Gothic</family>
+         <pointsize>17</pointsize>
          <weight>75</weight>
          <bold>true</bold>
          <underline>false</underline>
@@ -293,93 +438,6 @@
        </property>
       </widget>
      </item>
-     <item row="2" column="1">
-      <widget class="QLabel" name="label_package_3">
-       <property name="font">
-        <font>
-         <pointsize>20</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-         <underline>false</underline>
-         <strikeout>false</strikeout>
-        </font>
-       </property>
-       <property name="text">
-        <string>Package</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="0">
-      <widget class="QLabel" name="label_project_text_3">
-       <property name="font">
-        <font>
-         <pointsize>15</pointsize>
-         <italic>false</italic>
-        </font>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="2">
-      <widget class="QLabel" name="label_key_3">
-       <property name="font">
-        <font>
-         <pointsize>20</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-         <underline>false</underline>
-         <strikeout>false</strikeout>
-        </font>
-       </property>
-       <property name="text">
-        <string>Key</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="2">
-      <widget class="QLabel" name="label_key_text_3">
-       <property name="font">
-        <font>
-         <pointsize>15</pointsize>
-         <italic>false</italic>
-        </font>
-       </property>
-       <property name="text">
-        <string>TextLabel</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="3">
-      <widget class="QLabel" name="label_language_3">
-       <property name="text">
-        <string>Language to translate to</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="3">
-      <widget class="QComboBox" name="languages_3">
-       <property name="currentText">
-        <string/>
-       </property>
-      </widget>
-     </item>
     </layout>
    </widget>
   </widget>
@@ -391,21 +449,7 @@
   <tabstop>next_3</tabstop>
   <tabstop>reset_3</tabstop>
   <tabstop>languages_3</tabstop>
-  <tabstop>languages</tabstop>
-  <tabstop>text_translation_2</tabstop>
-  <tabstop>previous_2</tabstop>
-  <tabstop>next_2</tabstop>
-  <tabstop>confirm_2</tabstop>
-  <tabstop>reset_2</tabstop>
-  <tabstop>text_original_2</tabstop>
-  <tabstop>languages_2</tabstop>
-  <tabstop>text_translation</tabstop>
-  <tabstop>next</tabstop>
-  <tabstop>confirm</tabstop>
-  <tabstop>previous</tabstop>
-  <tabstop>reset</tabstop>
   <tabstop>text_original_3</tabstop>
-  <tabstop>text_original</tabstop>
  </tabstops>
  <resources/>
  <connections>
