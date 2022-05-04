@@ -15,7 +15,7 @@ The objective is to visualize in the same window the original text to be transla
 
 - [Download the last release](https://github.com/Gyrfalc0n/noAim-Translation/releases/download/1.0/noAim.Translator.v1.0.exe)
 - Put the file `stringtable.xml` (the file must be called exactly that) in the same directory as the executable you just downloaded
-- You are free to run `noAim-Translator.exe v1.0`.
+- You are free to run `noAim-Translator-v1.0.exe `.
 - All changes are saved in the `stringtable_translated.xml` file in the same directory
 
 ### Install from source
