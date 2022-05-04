@@ -6,7 +6,7 @@ import html
 
 # Global variables
 original_file = "stringtable.xml"
-tempfile = "temp.xml"
+tempfile = "stringtable_translated.xml"
 # File management
 if os.path.exists(tempfile):
     os.remove(tempfile)
@@ -18,6 +18,7 @@ count_key = 0
 index = 0 # current index
 project = ""
 prev_line = 0
+language = ""
 # Table
 package_names = []
 key_names = []
@@ -62,18 +63,20 @@ class Window(QMainWindow, Ui_MainWindow):
         self.label_package_text_3.setText("")
         
     def previous(self):
-        global index
-        index -= 1
-        if index < 0:
-            index = count_key - 1
-        self.update()
+        if not self.first_launch:
+            global index
+            index -= 1
+            if index < 0:
+                index = count_key - 1
+            self.update(-1)
         
     def next(self):
-        global index
-        index += 1
-        if index > count_key - 1:
-            index = 0
-        self.update()
+        if not self.first_launch:
+            global index
+            index += 1
+            if index > count_key - 1:
+                index = 0
+            self.update(1)
         
     def confirm(self):
         global count_package, count_key, key_original, key_values, package_names, key_names, project, package_names_unique
@@ -81,7 +84,9 @@ class Window(QMainWindow, Ui_MainWindow):
             # First launch
             self.first_launch = False
             self.clear()
-            selected_language = self.languages_3.currentText()
+            selected_language = self.languages_3.currentText()      
+            global language
+            language = selected_language
             # Initialisation of tables
             for projet in tree.xpath("/Project"):
                 project = projet.attrib["name"]
@@ -96,11 +101,7 @@ class Window(QMainWindow, Ui_MainWindow):
                 package_names.append(package_parent)
                 # get specific key
                 original = tree.xpath("/Project/Package/Key[@ID='" + key.attrib['ID'] + "']/Original")[0]
-                if "Apply as Supporter" in original.text:
-                    print("text : " + original.text)
                 original2 = etree.tostring(original, encoding="utf-8").decode("utf-8")
-                if "Apply as Supporter" in original2:
-                    print("tostring : " + original2)
                 original2 = original2.replace("<Original>", "")
                 original2 = original2.replace("</Original>", "")
                 key_original.append(original2)
@@ -116,17 +117,38 @@ class Window(QMainWindow, Ui_MainWindow):
                 count_key += 1
             # Display first element
             self.update_lines()
-            self.update()
-        else: # Not first launch
+            self.update(1)
+        elif not self.first_launch: # Not first launch
             text = self.text_translation_3.toPlainText()
-            if text != "":
-                print("write")
-        
+            if text != "" and text != key_values[index]:
+                translated_confirmed = self.text_translation_3.toPlainText()
+                translated_confirmed = translated_confirmed.replace('\t', "")
+                translated_confirmed = translated_confirmed.replace('\n', "")
+                translated_initial = translated_confirmed
+                translated_confirmed = "\t\t\t" + "<" + language + ">" + translated_confirmed + "</" + language + ">\n"
+                with open(tempfile, "r", encoding="utf8") as file:
+                    lines = file.readlines()
+                if key_values[index] != "": # just modify if translation is not empty
+                    lines[key_lines[index]-1] = translated_confirmed # Replace line with new translation
+                    file = open(tempfile, "w", encoding="utf8")
+                    file.writelines(lines)
+                    file.close()
+                else: # insert new translation
+                    lines.insert(key_lines[index]-1, translated_confirmed)
+                    file = open(tempfile, "w", encoding="utf8")
+                    lines = "".join(lines)
+                    file.writelines(lines)
+                    file.close()
+                key_values[index] = translated_initial
+                self.update_lines() # probably not useful becose lines are already predicted
+                self.next()
+
     def update_lines(self):
         global key_lines, prev_line
         key_lines = [] # reset table
         file = open(tempfile, "r", encoding="utf8")
         lines = file.readlines()
+        line_number = 0
         for i in range(len(key_values)):
             line_count = 0
             new = False
@@ -156,8 +178,8 @@ class Window(QMainWindow, Ui_MainWindow):
                     break
             key_lines.append(line_number)
     
-    def update(self):
-        global index, project, revision_mode, unescape_mode
+    def update(self, way):
+        global index, revision_mode, unescape_mode
         if self.checkBox_revision.isChecked():
             revision_mode = True
         else:
@@ -172,9 +194,14 @@ class Window(QMainWindow, Ui_MainWindow):
             if revision_mode or not revision_mode and translated == "":
                 break
             else:
-                index += 1
-                if index > count_key - 1:
-                    index = 0
+                if way == 1:
+                    index += 1
+                    if index > count_key - 1:
+                        index = 0
+                elif way == -1: # way = -1
+                    index -= 1
+                    if index < 0:
+                        index = count_key - 1
         self.clear()
         if unescape_mode:
             original_text = html.unescape(original_text)
@@ -191,7 +218,8 @@ class Window(QMainWindow, Ui_MainWindow):
         self.progressBar_3.setProperty("value", value)
                 
     def reset(self):
-        self.update()    
+        if not self.first_launch:
+            self.update(0)    
 
 # Qt5 Application main
 if __name__ == "__main__":
