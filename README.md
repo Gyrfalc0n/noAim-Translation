@@ -6,7 +6,7 @@ The objective is to visualize in the same window the original text to be transla
 
 ## Application
 <div align="center">
-   <img src="https://user-images.githubusercontent.com/46728024/166704989-6ed694cb-d053-453d-91a9-95e9813eefc0.png" width="80%" height="80%">
+   <img src="https://user-images.githubusercontent.com/46728024/166704989-6ed694cb-d053-453d-91a9-95e9813eefc0.png" width="90%" height="90%">
 </div>
 
 ## How to install and run
