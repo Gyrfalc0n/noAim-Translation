@@ -1,5 +1,7 @@
+from heapq import merge
 import sys, os, shutil
-from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtWidgets import QApplication, QMainWindow, QDialog
+from PyQt5.uic import loadUi
 from app import *
 from lxml import etree
 import html
@@ -29,6 +31,17 @@ package_names_unique = []
 revision_mode = False
 unescape_mode = True
 
+
+class MergeMode(QDialog):
+    def __init__(self):
+        super(MergeMode, self).__init__()
+        loadUi('Qt/merge.ui', self)
+        
+class ResetDialog(QDialog):
+    def __init__(self):
+        super(ResetDialog, self).__init__()
+        loadUi('Qt/reset.ui', self)
+
 # Qt5 Application
 class Window(QMainWindow, Ui_MainWindow):
     
@@ -39,7 +52,8 @@ class Window(QMainWindow, Ui_MainWindow):
         self.previous_3.clicked.connect(self.previous)
         self.next_3.clicked.connect(self.next)
         self.confirm_3.clicked.connect(self.confirm)
-        self.reset_3.clicked.connect(self.reset)
+        self.reset_3.clicked.connect(self.executeResetDialog)
+        self.merge_mode_button.clicked.connect(self.executeMergeDialog)
         self.languages_3.addItem("Select language")
         self.languages_3.addItem("English")
         self.languages_3.addItem("French")
@@ -51,6 +65,16 @@ class Window(QMainWindow, Ui_MainWindow):
         self.languages_3.addItem("Portuguese")
         self.text_original_3.setPlainText("Please select a language from the dropdown above and click 'Confirm translation' to continue.")
         self.text_translation_3.setPlainText("Activate 'Revision Mode' to review previous translations for selected language.\nActivate 'Unescape HTML' to remove HTML tags from translation and original text (activated by default).")
+    
+    def executeMergeDialog(self):
+        merge_dialog = MergeMode()
+        merge_dialog.exec()
+        
+    def executeResetDialog(self):
+        reset = ResetDialog()
+        result = reset.exec()
+        if result == QDialog.Accepted:
+            self.reset()
     
     # Core Function
     first_launch = True

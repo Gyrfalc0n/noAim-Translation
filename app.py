@@ -217,6 +217,13 @@ class Ui_MainWindow(object):
         self.label_project_3.setAlignment(QtCore.Qt.AlignCenter)
         self.label_project_3.setObjectName("label_project_3")
         self.gridLayout_3.addWidget(self.label_project_3, 2, 0, 1, 1)
+        self.merge_mode_button = QtWidgets.QPushButton(self.box_infos)
+        font = QtGui.QFont()
+        font.setBold(True)
+        font.setWeight(75)
+        self.merge_mode_button.setFont(font)
+        self.merge_mode_button.setObjectName("merge_mode_button")
+        self.gridLayout_3.addWidget(self.merge_mode_button, 2, 3, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -250,6 +257,7 @@ class Ui_MainWindow(object):
         self.label_language_3.setText(_translate("MainWindow", "Language to translate to"))
         self.label_key_text_3.setText(_translate("MainWindow", "TextLabel"))
         self.label_project_3.setText(_translate("MainWindow", "Project"))
+        self.merge_mode_button.setText(_translate("MainWindow", "MERGE MODE"))
 
 
 if __name__ == "__main__":

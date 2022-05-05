@@ -438,6 +438,19 @@
        </property>
       </widget>
      </item>
+     <item row="2" column="3">
+      <widget class="QPushButton" name="merge_mode_button">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>MERGE MODE</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
   </widget>
