@@ -2,15 +2,30 @@ from pypresence import Presence
 import time
 
 # Discord RPC connection and parameters
-client_id = "842745089696596010"
-image = "plex"
-large_text = "Plex Media Server"
-small = "github"
-small_text = "Github: Plex-Rich-Presence"
+client_id = "975673805160710174"
+image = "logo"
+large_text = "noAim Translator"
+small = "small"
+small_text = "noaim.eu"
+base_timer = int(time.time())
 RPC = Presence(client_id)
 RPC.connect()
 
-def update():
-    details = "En pause..."
-    timer = int(time.time())
-    is_idling = 1
+def presence_update(state, details):
+    if details == "null":
+        details = "Idling..."
+    if state != "null":
+        RPC.update(state=state,
+                details=details,
+                large_image=image,
+                large_text=large_text,
+                small_image=small,
+                small_text=small_text,
+                start=base_timer)
+    else:
+        RPC.update(details=details,
+                large_image=image,
+                large_text=large_text,
+                small_image=small,
+                small_text=small_text,
+                start=base_timer)

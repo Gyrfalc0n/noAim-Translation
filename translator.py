@@ -1,10 +1,10 @@
-from heapq import merge
 import sys, os, shutil
 from PyQt5.QtWidgets import QApplication, QMainWindow, QDialog
 from PyQt5.uic import loadUi
 from app import *
 from lxml import etree
 import html
+from presence import *
 
 # Global variables
 original_file = "stringtable.xml"
@@ -31,6 +31,9 @@ package_names_unique = []
 revision_mode = False
 unescape_mode = True
 
+# Rich presence init
+presence_update("null", "null")
+
 
 class MergeMode(QDialog):
     def __init__(self):
@@ -42,7 +45,7 @@ class ResetDialog(QDialog):
         super(ResetDialog, self).__init__()
         loadUi('Qt/reset.ui', self)
 
-# Qt5 Application
+# Qt5 Application*
 class Window(QMainWindow, Ui_MainWindow):
     
     # Qt5
@@ -68,6 +71,7 @@ class Window(QMainWindow, Ui_MainWindow):
     
     def executeMergeDialog(self):
         merge_dialog = MergeMode()
+        presence_update("null", "Merging files")
         merge_dialog.exec()
         
     def executeResetDialog(self):
@@ -233,6 +237,9 @@ class Window(QMainWindow, Ui_MainWindow):
         self.text_translation_3.setPlainText(translated)
         self.text_original_3.setPlainText(original_text)
         self.label_key_text_3.setText(key_names[index] + " (" + str(index + 1) + "/" + str(count_key) + ")")
+        details = "Translating to " + language
+        state = "Key " + str(index + 1) + "/" + str(count_key)
+        presence_update(state, details)
         self.label_project_text_3.setText(project)
         for i in range(len(package_names_unique)):
             if package_names[index] == package_names_unique[i]:
